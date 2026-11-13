@@ -661,6 +661,56 @@
       "skillFolderHash": "aca7d8680896e4f50698f30bb04b01ace166621a",
       "installedAt": "2026-11-13T20:58:30.867Z",
       "updatedAt": "2026-11-13T20:58:30.867Z"
+    },
+    "aws-mcp-setup": {
+      "source": "zxkane/aws-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/zxkane/aws-skills.git",
+      "skillPath": "plugins/aws-common/skills/aws-mcp-setup/SKILL.md",
+      "skillFolderHash": "6025164e75c62254a3a99b40f78d3dd61bbb1e77",
+      "pluginName": "aws-common",
+      "installedAt": "2026-11-13T21:02:01.060Z",
+      "updatedAt": "2026-11-13T21:02:01.060Z"
+    },
+    "aws-cdk-development": {
+      "source": "zxkane/aws-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/zxkane/aws-skills.git",
+      "skillPath": "plugins/aws-iac/skills/aws-cdk-development/SKILL.md",
+      "skillFolderHash": "7a37a62e4a41c81e0458c8ae2c102ab74e8fe4b2",
+      "pluginName": "aws-iac",
+      "installedAt": "2026-11-13T21:02:01.064Z",
+      "updatedAt": "2026-11-13T21:02:01.064Z"
+    },
+    "aws-cost-operations": {
+      "source": "zxkane/aws-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/zxkane/aws-skills.git",
+      "skillPath": "plugins/aws-cost-ops/skills/aws-cost-operations/SKILL.md",
+      "skillFolderHash": "b600f0d28c238987e7cb73f68522081d0df7895c",
+      "pluginName": "aws-cost-ops",
+      "installedAt": "2026-11-13T21:02:01.066Z",
+      "updatedAt": "2026-11-13T21:02:01.066Z"
+    },
+    "aws-serverless-eda": {
+      "source": "zxkane/aws-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/zxkane/aws-skills.git",
+      "skillPath": "plugins/serverless-eda/skills/aws-serverless-eda/SKILL.md",
+      "skillFolderHash": "743451efd3e678560b1b10f81df5267beb9b803c",
+      "pluginName": "serverless-eda",
+      "installedAt": "2026-11-13T21:02:01.067Z",
+      "updatedAt": "2026-11-13T21:02:01.067Z"
+    },
+    "aws-agentic-ai": {
+      "source": "zxkane/aws-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/zxkane/aws-skills.git",
+      "skillPath": "plugins/aws-agentic-ai/skills/aws-agentic-ai/SKILL.md",
+      "skillFolderHash": "c69945468dc9a948ef4a29fa3c0ba2d5537b55ea",
+      "pluginName": "aws-agentic-ai",
+      "installedAt": "2026-11-13T21:02:01.068Z",
+      "updatedAt": "2026-11-13T21:02:01.068Z"
     }
   },
   "dismissed": {
