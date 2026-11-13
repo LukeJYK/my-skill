@@ -589,6 +589,78 @@
       "skillFolderHash": "cc4a8462541df9fe2f2d3690366a990eca4ba528",
       "installedAt": "2026-11-13T19:47:30.688Z",
       "updatedAt": "2026-11-13T19:47:30.688Z"
+    },
+    "idea-evaluator": {
+      "source": "HKUSTDial/Supervisor-Skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/HKUSTDial/Supervisor-Skills.git",
+      "skillPath": "skills/idea-evaluator/SKILL.md",
+      "skillFolderHash": "406501649d759daa3408bf9915d469cec3b46394",
+      "installedAt": "2026-11-13T20:54:08.690Z",
+      "updatedAt": "2026-11-13T20:58:30.857Z"
+    },
+    "benchmark-paper-template": {
+      "source": "HKUSTDial/Supervisor-Skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/HKUSTDial/Supervisor-Skills.git",
+      "skillPath": "skills/benchmark-paper-template/SKILL.md",
+      "skillFolderHash": "3d0add27a1889cf69af384583b00b95c4981f5b5",
+      "installedAt": "2026-11-13T20:58:30.852Z",
+      "updatedAt": "2026-11-13T20:58:30.852Z"
+    },
+    "figure-designer": {
+      "source": "HKUSTDial/Supervisor-Skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/HKUSTDial/Supervisor-Skills.git",
+      "skillPath": "skills/figure-designer/SKILL.md",
+      "skillFolderHash": "5fd289312bc322097ab54f5d733fdd5edb65d9e0",
+      "installedAt": "2026-11-13T20:58:30.856Z",
+      "updatedAt": "2026-11-13T20:58:30.856Z"
+    },
+    "intro-drafter": {
+      "source": "HKUSTDial/Supervisor-Skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/HKUSTDial/Supervisor-Skills.git",
+      "skillPath": "skills/intro-drafter/SKILL.md",
+      "skillFolderHash": "d5858ab29e5ed6ee780b8d4dcdbddc9025a431a0",
+      "installedAt": "2026-11-13T20:58:30.859Z",
+      "updatedAt": "2026-11-13T20:58:30.859Z"
+    },
+    "pre-submission-reviewer": {
+      "source": "HKUSTDial/Supervisor-Skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/HKUSTDial/Supervisor-Skills.git",
+      "skillPath": "skills/pre-submission-reviewer/SKILL.md",
+      "skillFolderHash": "d0dcbd153246e5e070203ba199b79e8745db945a",
+      "installedAt": "2026-11-13T20:58:30.862Z",
+      "updatedAt": "2026-11-13T20:58:30.862Z"
+    },
+    "rebuttal-guidance": {
+      "source": "HKUSTDial/Supervisor-Skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/HKUSTDial/Supervisor-Skills.git",
+      "skillPath": "skills/rebuttal-guidance/SKILL.md",
+      "skillFolderHash": "c7991757e2bebdaccfbe4cdf2ae6dd766a2e6eee",
+      "installedAt": "2026-11-13T20:58:30.863Z",
+      "updatedAt": "2026-11-13T20:58:30.863Z"
+    },
+    "tech-paper-template": {
+      "source": "HKUSTDial/Supervisor-Skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/HKUSTDial/Supervisor-Skills.git",
+      "skillPath": "skills/tech-paper-template/SKILL.md",
+      "skillFolderHash": "7dd9e502f17b1b838679edebbae31b4bff22a781",
+      "installedAt": "2026-11-13T20:58:30.866Z",
+      "updatedAt": "2026-11-13T20:58:30.866Z"
+    },
+    "vibe-research-workflow": {
+      "source": "HKUSTDial/Supervisor-Skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/HKUSTDial/Supervisor-Skills.git",
+      "skillPath": "skills/vibe-research-workflow/SKILL.md",
+      "skillFolderHash": "aca7d8680896e4f50698f30bb04b01ace166621a",
+      "installedAt": "2026-11-13T20:58:30.867Z",
+      "updatedAt": "2026-11-13T20:58:30.867Z"
     }
   },
   "dismissed": {
