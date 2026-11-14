@@ -936,6 +936,26 @@
       "skillFolderHash": "81e8196f4dd4bf9fc5f0a1b827f4148af52a4391",
       "installedAt": "2026-11-13T21:07:58.693Z",
       "updatedAt": "2026-11-13T21:07:58.693Z"
+    },
+    "docx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/docx/SKILL.md",
+      "skillFolderHash": "306eb29b24d14e7636470305a88826c01a4f872c",
+      "pluginName": "document-skills",
+      "installedAt": "2026-11-14T00:17:00.772Z",
+      "updatedAt": "2026-11-14T00:17:00.772Z"
+    },
+    "pdf": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/pdf/SKILL.md",
+      "skillFolderHash": "4b1916c1b9362c466332fbd36108fab908801268",
+      "pluginName": "document-skills",
+      "installedAt": "2026-11-14T00:17:00.779Z",
+      "updatedAt": "2026-11-14T00:17:00.779Z"
     }
   },
   "dismissed": {
