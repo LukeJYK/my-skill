@@ -956,6 +956,15 @@
       "pluginName": "document-skills",
       "installedAt": "2026-11-14T00:17:00.779Z",
       "updatedAt": "2026-11-14T00:17:00.779Z"
+    },
+    "hf-cli": {
+      "source": "huggingface/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/huggingface/skills.git",
+      "skillPath": "skills/hf-cli/SKILL.md",
+      "skillFolderHash": "70f9109ebb99cf204b7e3ffaade324beff66e36b",
+      "installedAt": "2026-11-14T00:35:29.850Z",
+      "updatedAt": "2026-11-14T00:35:29.850Z"
     }
   },
   "dismissed": {
