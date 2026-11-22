@@ -965,6 +965,38 @@
       "skillFolderHash": "70f9109ebb99cf204b7e3ffaade324beff66e36b",
       "installedAt": "2026-11-14T00:35:29.850Z",
       "updatedAt": "2026-11-14T00:35:29.850Z"
+    },
+    "pptx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "skillPath": "skills/pptx/SKILL.md",
+      "skillFolderHash": "1c0176bffc8752e4c4a22eaa8e142a55cc178990",
+      "pluginName": "document-skills",
+      "installedAt": "2026-11-22T04:46:48.476Z",
+      "updatedAt": "2026-11-22T04:46:48.476Z"
+    },
+    "xlsx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "skillPath": "skills/xlsx/SKILL.md",
+      "skillFolderHash": "aad9fca510bd437479fdd5f55cbd70247f7b5780",
+      "pluginName": "document-skills",
+      "installedAt": "2026-11-22T04:46:48.491Z",
+      "updatedAt": "2026-11-22T04:46:48.491Z"
+    },
+    "pptx-posters": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "commit": "ec59a29a03d5c40f73ab40878df04860bc00e876",
+      "skillPath": "skills/pptx-posters/SKILL.md",
+      "skillFolderHash": "d96c387e0776d6a31597cdd52632ffee35e445ec",
+      "installedAt": "2026-11-22T04:48:08.591Z",
+      "updatedAt": "2026-11-22T04:48:08.591Z"
     }
   },
   "dismissed": {
