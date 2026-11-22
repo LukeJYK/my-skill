@@ -76,13 +76,23 @@ done
 
 paths=(${synced[@]+"${synced[@]}"} ${removed[@]+"${removed[@]}"})
 
-# Refuse to clobber edits made in the repo copy (tracked changes vs HEAD).
-# Skipped with -c: after a copy-only run the repo legitimately differs from HEAD.
-if [ "$force" = 0 ] && [ "$copy_only" = 0 ] && [ "${#paths[@]}" -gt 0 ] \
-   && git -C "$REPO" rev-parse --verify -q HEAD >/dev/null \
-   && ! git -C "$REPO" diff --quiet HEAD -- "${paths[@]}"; then
-  git -C "$REPO" diff --stat HEAD -- "${paths[@]}" >&2
-  die "uncommitted edits in the repo's skill folders above would be overwritten. Commit/discard them, or rerun with -f."
+# Refuse to clobber edits made in the repo copy. A skill folder only counts as
+# edited if it has uncommitted changes vs HEAD *and* differs from ~/.agents
+# (so the sync would change it). Folders already identical to ~/.agents, e.g.
+# after a -c run, pass.
+if [ "$force" = 0 ] && git -C "$REPO" rev-parse --verify -q HEAD >/dev/null; then
+  conflicts=()
+  for name in ${paths[@]+"${paths[@]}"}; do
+    git -C "$REPO" diff --quiet HEAD -- "$name" && continue
+    if [ -d "$SRC/$name" ] && diff -rq --exclude=.DS_Store "$SRC/$name" "$REPO/$name" >/dev/null 2>&1; then
+      continue
+    fi
+    conflicts+=("$name")
+  done
+  if [ "${#conflicts[@]}" -gt 0 ]; then
+    git -C "$REPO" diff --stat HEAD -- "${conflicts[@]}" >&2
+    die "uncommitted edits in the repo's skill folders above would be overwritten. Commit/discard them, or rerun with -f."
+  fi
 fi
 
 # ---- 3. copy / remove ----------------------------------------------------
