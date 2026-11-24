@@ -1006,7 +1006,7 @@
       "skillPath": "skills/dispatching-parallel-agents/SKILL.md",
       "skillFolderHash": "15697cb0726c26a66bff737494e8b5266667ba0c",
       "installedAt": "2026-11-24T17:34:01.502Z",
-      "updatedAt": "2026-11-24T17:34:01.502Z"
+      "updatedAt": "2026-11-24T17:52:11.835Z"
     },
     "subagent-driven-development": {
       "source": "obra/superpowers",
@@ -1016,7 +1016,7 @@
       "skillPath": "skills/subagent-driven-development/SKILL.md",
       "skillFolderHash": "c04a61186680d4cfc6784136d0421cd4abcfb40c",
       "installedAt": "2026-11-24T17:34:01.506Z",
-      "updatedAt": "2026-11-24T17:34:01.506Z"
+      "updatedAt": "2026-11-24T17:52:11.842Z"
     },
     "using-git-worktrees": {
       "source": "obra/superpowers",
@@ -1026,7 +1026,7 @@
       "skillPath": "skills/using-git-worktrees/SKILL.md",
       "skillFolderHash": "d2b8357b922667a091bfe967840abf5ae84ce99c",
       "installedAt": "2026-11-24T17:37:31.414Z",
-      "updatedAt": "2026-11-24T17:37:31.414Z"
+      "updatedAt": "2026-11-24T17:52:11.846Z"
     },
     "verification-before-completion": {
       "source": "obra/superpowers",
@@ -1036,7 +1036,7 @@
       "skillPath": "skills/verification-before-completion/SKILL.md",
       "skillFolderHash": "a4cb0b69aaefeab540947a7f1642bdaad810e37a",
       "installedAt": "2026-11-24T17:37:31.419Z",
-      "updatedAt": "2026-11-24T17:37:31.419Z"
+      "updatedAt": "2026-11-24T17:52:11.851Z"
     },
     "systematic-debugging": {
       "source": "obra/superpowers",
@@ -1046,7 +1046,7 @@
       "skillPath": "skills/systematic-debugging/SKILL.md",
       "skillFolderHash": "774f23e27e35cb0a89ede39156e7b079fbb84190",
       "installedAt": "2026-11-24T17:37:58.606Z",
-      "updatedAt": "2026-11-24T17:37:58.606Z"
+      "updatedAt": "2026-11-24T17:52:11.844Z"
     },
     "writing-skills": {
       "source": "obra/superpowers",
@@ -1056,7 +1056,258 @@
       "skillPath": "skills/writing-skills/SKILL.md",
       "skillFolderHash": "660ede63b84ce5d07ef28cccc2973165e2ca06e2",
       "installedAt": "2026-11-24T17:37:58.613Z",
-      "updatedAt": "2026-11-24T17:37:58.613Z"
+      "updatedAt": "2026-11-24T17:52:11.856Z"
+    },
+    "brainstorming": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "skillPath": "skills/brainstorming/SKILL.md",
+      "skillFolderHash": "ebd5b1afb600976b12a4c07fedd9c408c1e82f97",
+      "installedAt": "2026-11-24T17:52:11.831Z",
+      "updatedAt": "2026-11-24T17:52:11.831Z"
+    },
+    "executing-plans": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "skillPath": "skills/executing-plans/SKILL.md",
+      "skillFolderHash": "3a8438d91d9340747ffd985fdbcfe7238d6e1e57",
+      "installedAt": "2026-11-24T17:52:11.836Z",
+      "updatedAt": "2026-11-24T17:52:11.836Z"
+    },
+    "finishing-a-development-branch": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "skillPath": "skills/finishing-a-development-branch/SKILL.md",
+      "skillFolderHash": "3b1205aa5038c71946077dd63b9e71b447729e70",
+      "installedAt": "2026-11-24T17:52:11.837Z",
+      "updatedAt": "2026-11-24T17:52:11.837Z"
+    },
+    "receiving-code-review": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "skillPath": "skills/receiving-code-review/SKILL.md",
+      "skillFolderHash": "b5e154fc3ec7a6a0b1e710eebacc2168620cc428",
+      "installedAt": "2026-11-24T17:52:11.838Z",
+      "updatedAt": "2026-11-24T17:52:11.838Z"
+    },
+    "requesting-code-review": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "skillPath": "skills/requesting-code-review/SKILL.md",
+      "skillFolderHash": "f4a6749898702895ea4fd57c7f186cf43205b99a",
+      "installedAt": "2026-11-24T17:52:11.841Z",
+      "updatedAt": "2026-11-24T17:52:11.841Z"
+    },
+    "using-superpowers": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "skillPath": "skills/using-superpowers/SKILL.md",
+      "skillFolderHash": "4c777432715fe58984d212a36aedc6a18472e512",
+      "installedAt": "2026-11-24T17:52:11.848Z",
+      "updatedAt": "2026-11-24T17:52:11.848Z"
+    },
+    "writing-plans": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "skillPath": "skills/writing-plans/SKILL.md",
+      "skillFolderHash": "cc97fa00eb2ccd4f283e34eb2ba06a48e1e679f7",
+      "installedAt": "2026-11-24T17:52:11.852Z",
+      "updatedAt": "2026-11-24T17:52:11.852Z"
+    },
+    "nature-academic-search": {
+      "source": "Yuan1z0825/nature-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Yuan1z0825/nature-skills.git",
+      "commit": "c6701dbea29afa7c596d029b957b7edc92130ea5",
+      "skillPath": "skills/nature-academic-search/SKILL.md",
+      "skillFolderHash": "d04522e69f83f9cc657e4d609fa36524b8b9645a",
+      "installedAt": "2026-11-24T17:52:44.260Z",
+      "updatedAt": "2026-11-24T17:52:44.260Z"
+    },
+    "nature-citation": {
+      "source": "Yuan1z0825/nature-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Yuan1z0825/nature-skills.git",
+      "commit": "c6701dbea29afa7c596d029b957b7edc92130ea5",
+      "skillPath": "skills/nature-citation/SKILL.md",
+      "skillFolderHash": "22c280aef929b2b93ddd2e503b8d162d9c684c11",
+      "installedAt": "2026-11-24T17:52:44.266Z",
+      "updatedAt": "2026-11-24T17:52:44.266Z"
+    },
+    "nature-data": {
+      "source": "Yuan1z0825/nature-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Yuan1z0825/nature-skills.git",
+      "commit": "c6701dbea29afa7c596d029b957b7edc92130ea5",
+      "skillPath": "skills/nature-data/SKILL.md",
+      "skillFolderHash": "68ec0a065ec861dcd146880a22e1413fd1315906",
+      "installedAt": "2026-11-24T17:52:44.267Z",
+      "updatedAt": "2026-11-24T17:52:44.267Z"
+    },
+    "nature-figure": {
+      "source": "Yuan1z0825/nature-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Yuan1z0825/nature-skills.git",
+      "commit": "c6701dbea29afa7c596d029b957b7edc92130ea5",
+      "skillPath": "skills/nature-figure/SKILL.md",
+      "skillFolderHash": "1391d27d795e6282e1452be6d15245ba7e18bb45",
+      "installedAt": "2026-11-24T17:52:44.268Z",
+      "updatedAt": "2026-11-24T17:52:44.268Z"
+    },
+    "nature-paper2ppt": {
+      "source": "Yuan1z0825/nature-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Yuan1z0825/nature-skills.git",
+      "commit": "c6701dbea29afa7c596d029b957b7edc92130ea5",
+      "skillPath": "skills/nature-paper2ppt/SKILL.md",
+      "skillFolderHash": "71dee0b04984a2ff2181a10fd1a743e50ceb6b53",
+      "installedAt": "2026-11-24T17:52:44.269Z",
+      "updatedAt": "2026-11-24T17:52:44.269Z"
+    },
+    "nature-polishing": {
+      "source": "Yuan1z0825/nature-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Yuan1z0825/nature-skills.git",
+      "commit": "c6701dbea29afa7c596d029b957b7edc92130ea5",
+      "skillPath": "skills/nature-polishing/SKILL.md",
+      "skillFolderHash": "8fa324de5b88ade25f016357e7fb72212ab6f4e5",
+      "installedAt": "2026-11-24T17:52:44.270Z",
+      "updatedAt": "2026-11-24T17:52:44.270Z"
+    },
+    "nature-reader": {
+      "source": "Yuan1z0825/nature-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Yuan1z0825/nature-skills.git",
+      "commit": "c6701dbea29afa7c596d029b957b7edc92130ea5",
+      "skillPath": "skills/nature-reader/SKILL.md",
+      "skillFolderHash": "9d369ece51ad135ac1386c5a33fdf2129f756717",
+      "installedAt": "2026-11-24T17:52:44.270Z",
+      "updatedAt": "2026-11-24T17:52:44.270Z"
+    },
+    "nature-response": {
+      "source": "Yuan1z0825/nature-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Yuan1z0825/nature-skills.git",
+      "commit": "c6701dbea29afa7c596d029b957b7edc92130ea5",
+      "skillPath": "skills/nature-response/SKILL.md",
+      "skillFolderHash": "e96877429c7626d9aac2b426c1abdeb3feeaf198",
+      "installedAt": "2026-11-24T17:52:44.271Z",
+      "updatedAt": "2026-11-24T17:52:44.271Z"
+    },
+    "nature-reviewer": {
+      "source": "Yuan1z0825/nature-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Yuan1z0825/nature-skills.git",
+      "commit": "c6701dbea29afa7c596d029b957b7edc92130ea5",
+      "skillPath": "skills/nature-reviewer/SKILL.md",
+      "skillFolderHash": "7b9057c8ba0a112088923f5cdcfaf4d1fbb239cd",
+      "installedAt": "2026-11-24T17:52:44.272Z",
+      "updatedAt": "2026-11-24T17:52:44.272Z"
+    },
+    "nature-writing": {
+      "source": "Yuan1z0825/nature-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Yuan1z0825/nature-skills.git",
+      "commit": "c6701dbea29afa7c596d029b957b7edc92130ea5",
+      "skillPath": "skills/nature-writing/SKILL.md",
+      "skillFolderHash": "ac10ae2ef28db950ecff18f690653540860ec4ab",
+      "installedAt": "2026-11-24T17:52:44.272Z",
+      "updatedAt": "2026-11-24T17:52:44.272Z"
+    },
+    "opensrc": {
+      "source": "vercel-labs/opensrc",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/opensrc.git",
+      "commit": "b51de60867e806da1839b33dd29c29424f12521b",
+      "skillPath": "skills/opensrc/SKILL.md",
+      "skillFolderHash": "0584838f454836cf26b7170348df5e266a7c2a79",
+      "installedAt": "2026-11-24T17:53:31.826Z",
+      "updatedAt": "2026-11-24T17:58:40.148Z"
+    },
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
+      "commit": "0a923358ea989d7602f0d06507ad3447c62ffe9b",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "skillFolderHash": "d75a393c9a371295c6d6be46c34938e76ef21184",
+      "pluginName": "agent-browser",
+      "installedAt": "2026-11-24T17:53:45.176Z",
+      "updatedAt": "2026-11-24T17:58:33.881Z"
+    },
+    "exploratory-data-analysis": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "commit": "c21d13b3cc2894680229ba9959a53281acb9200e",
+      "skillPath": "skills/exploratory-data-analysis/SKILL.md",
+      "skillFolderHash": "05078b0b57ce5387f8883e6ae1273f11f8329115",
+      "installedAt": "2026-11-24T17:58:15.417Z",
+      "updatedAt": "2026-11-24T17:58:15.417Z"
+    },
+    "hypothesis-generation": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "commit": "c21d13b3cc2894680229ba9959a53281acb9200e",
+      "skillPath": "skills/hypothesis-generation/SKILL.md",
+      "skillFolderHash": "4ad4a8776adf382204473a26d3b9967541409e85",
+      "installedAt": "2026-11-24T17:58:15.421Z",
+      "updatedAt": "2026-11-24T17:58:15.421Z"
+    },
+    "parallel-web": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "commit": "c21d13b3cc2894680229ba9959a53281acb9200e",
+      "skillPath": "skills/parallel-web/SKILL.md",
+      "skillFolderHash": "6cd9f21e44c02d550715145d93db2a7cba688ac8",
+      "installedAt": "2026-11-24T17:58:15.422Z",
+      "updatedAt": "2026-11-24T17:58:15.422Z"
+    },
+    "property-based-testing": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/trailofbits/skills.git",
+      "commit": "149d7b21f4067765b82e67029730b42d228ef4b4",
+      "skillPath": "plugins/property-based-testing/skills/property-based-testing/SKILL.md",
+      "skillFolderHash": "cf5e77d684180c80a2f3aa228c53d04b1fa1ba77",
+      "installedAt": "2026-11-24T17:58:27.705Z",
+      "updatedAt": "2026-11-24T17:58:27.705Z"
+    },
+    "modern-python": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/trailofbits/skills.git",
+      "commit": "149d7b21f4067765b82e67029730b42d228ef4b4",
+      "skillPath": "plugins/modern-python/skills/modern-python/SKILL.md",
+      "skillFolderHash": "e84fa2b3a076b4333e4cc6187510f2b180eed427",
+      "installedAt": "2026-11-24T17:58:27.711Z",
+      "updatedAt": "2026-11-24T17:58:27.711Z"
+    },
+    "auditing-skills": {
+      "source": "dbt-labs/dbt-agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/dbt-labs/dbt-agent-skills.git",
+      "commit": "b8facde20b7a92c40ce3e6b86b71c4b92aa44040",
+      "skillPath": ".claude/skills/auditing-skills/SKILL.md",
+      "skillFolderHash": "b5e658a06f43e7bbcce3c56e63a144328e15891d",
+      "installedAt": "2026-11-24T17:58:43.901Z",
+      "updatedAt": "2026-11-24T17:58:43.901Z"
     }
   },
   "dismissed": {
