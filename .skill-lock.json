@@ -1308,6 +1308,16 @@
       "skillFolderHash": "b5e658a06f43e7bbcce3c56e63a144328e15891d",
       "installedAt": "2026-11-24T17:58:43.901Z",
       "updatedAt": "2026-11-24T17:58:43.901Z"
+    },
+    "agentic-actions-auditor": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/trailofbits/skills.git",
+      "commit": "149d7b21f4067765b82e67029730b42d228ef4b4",
+      "skillPath": "plugins/agentic-actions-auditor/skills/agentic-actions-auditor/SKILL.md",
+      "skillFolderHash": "3c07fa0b66ec665df1b17f5e09ab3e735f627029",
+      "installedAt": "2026-11-24T18:54:13.549Z",
+      "updatedAt": "2026-11-24T18:54:13.549Z"
     }
   },
   "dismissed": {
