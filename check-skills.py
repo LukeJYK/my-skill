@@ -12,7 +12,10 @@ Errors (exit 1):
   - `description` longer than 1024 chars
   - relative link in SKILL.md pointing at a file inside the skill that does not exist
   - bundled .py script with a syntax error, bundled .sh script failing `bash -n`
-  - skill folder missing from .skill-lock.json, or lock entry with no folder
+  - lock entry in .skill-lock.json with no skill folder
+Info (not a problem):
+  - skills with no lock entry are listed as local skills (written by hand or
+    copied in; `npx skills update` leaves them alone)
 Warnings:
   - SKILL.md longer than 500 lines
   - ../ link to a file outside the skill (upstream shared file) that is missing
@@ -165,9 +168,6 @@ def check_skill(d, lock_names, stale_days):
                 msg = (r.stderr.strip().splitlines() or ["bash -n failed"])[0]
                 errors.append(f"shell syntax: {sh.relative_to(d)}: {msg}")
 
-    if lock_names is not None and d.name not in lock_names:
-        errors.append("not listed in .skill-lock.json")
-
     notes = sorted((REPO / "vault" / "notes").glob(f"*/{d.name}.md"))
     if not notes:
         warns.append(f"no vault note vault/notes/<domain>/{d.name}.md (run build-vault.py)")
@@ -233,6 +233,11 @@ def main():
     for e in global_errors:
         print(f"[FAIL] repo: {e}")
     n_err += len(global_errors)
+
+    if lock_names is not None:
+        local = sorted(d.name for d in skills if d.name not in lock_names)
+        if local:
+            print(f"\nlocal skills (no upstream, `update` skips them): {', '.join(local)}")
 
     print(f"\n{len(skills)} skills checked: {n_err} errors, {n_warn} warnings "
           f"({len(skills) - n_bad} clean)")
