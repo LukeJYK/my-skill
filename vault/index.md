@@ -8,7 +8,7 @@ created: 2026-11-24
 
 # Skills Index
 
-A navigable map of the **143 agent skills** in this vault, grouped into 12 domains. Each entry links to a per-skill note that wraps the original `SKILL.md` and holds your personal notes.
+A navigable map of the **144 agent skills** in this vault, grouped into 12 domains. Each entry links to a per-skill note that wraps the original `SKILL.md` and holds your personal notes.
 
 > [!tip] How to navigate
 > - **Find by name/synonym:** quick switcher (Cmd+O); skills carry aliases like `TDD`, `CDK`, `sklearn`.
@@ -98,7 +98,7 @@ Multi-perspective deliberation, brainstorming, hypothesis generation, idea evalu
 ## All skills (A–Z)
 
 **A**
-[academic-paper](notes/academic-pipelines/academic-paper.md) · [academic-paper-reviewer](notes/academic-pipelines/academic-paper-reviewer.md) · [academic-pipeline](notes/academic-pipelines/academic-pipeline.md) · [aeon](notes/ml-ai/aeon.md) · [agent-browser](notes/uncategorized/agent-browser.md) · [agentic-actions-auditor](notes/uncategorized/agentic-actions-auditor.md) · [api-and-interface-design](notes/software-engineering/api-and-interface-design.md) · [auditing-skills](notes/uncategorized/auditing-skills.md) · [autoskill](notes/vault-meta/autoskill.md) · [aws-agentic-ai](notes/cloud-devops/aws-agentic-ai.md) · [aws-cdk-development](notes/cloud-devops/aws-cdk-development.md) · [aws-cost-operations](notes/cloud-devops/aws-cost-operations.md) · [aws-mcp-setup](notes/cloud-devops/aws-mcp-setup.md) · [aws-serverless-eda](notes/cloud-devops/aws-serverless-eda.md)
+[academic-paper](notes/academic-pipelines/academic-paper.md) · [academic-paper-reviewer](notes/academic-pipelines/academic-paper-reviewer.md) · [academic-pipeline](notes/academic-pipelines/academic-pipeline.md) · [adjusttext](notes/uncategorized/adjusttext.md) · [aeon](notes/ml-ai/aeon.md) · [agent-browser](notes/uncategorized/agent-browser.md) · [agentic-actions-auditor](notes/uncategorized/agentic-actions-auditor.md) · [api-and-interface-design](notes/software-engineering/api-and-interface-design.md) · [auditing-skills](notes/uncategorized/auditing-skills.md) · [autoskill](notes/vault-meta/autoskill.md) · [aws-agentic-ai](notes/cloud-devops/aws-agentic-ai.md) · [aws-cdk-development](notes/cloud-devops/aws-cdk-development.md) · [aws-cost-operations](notes/cloud-devops/aws-cost-operations.md) · [aws-mcp-setup](notes/cloud-devops/aws-mcp-setup.md) · [aws-serverless-eda](notes/cloud-devops/aws-serverless-eda.md)
 
 **B**
 [benchmark-paper-template](notes/research-writing/benchmark-paper-template.md) · [brainstorming](notes/uncategorized/brainstorming.md) · [browser-testing-with-devtools](notes/software-engineering/browser-testing-with-devtools.md)
@@ -168,6 +168,7 @@ Multi-perspective deliberation, brainstorming, hypothesis generation, idea evalu
 
 ## Uncategorized
 
+- [adjusttext](notes/uncategorized/adjusttext.md) — Use the Python adjustText package to automatically move matplotlib text labels so they do not overlap each other, points, or other artists
 - [agent-browser](notes/uncategorized/agent-browser.md) — Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting...
 - [agentic-actions-auditor](notes/uncategorized/agentic-actions-auditor.md) — Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations including Claude Code Action, Gemini CLI, OpenAI Codex, and GitHub AI Inference
 - [auditing-skills](notes/uncategorized/auditing-skills.md) — Use when checking skills for security or quality issues, reviewing audit results from skills.sh or Tessl, or remediating findings across published skills

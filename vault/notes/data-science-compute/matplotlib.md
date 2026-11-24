@@ -18,6 +18,7 @@ created: 2026-11-22
 
 ## Related skills
 
+- [adjusttext](../uncategorized/adjusttext.md) — Use the Python adjustText package to automatically move matplotlib text labels so they do not overlap each other, points, or other artists
 - [pdf](../documents-office/pdf.md) — Use this skill whenever the user wants to do anything with PDF files
 - [scientific-visualization](../research-writing/scientific-visualization.md) — Creates and audits truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly
 - [seaborn](seaborn.md) — Creates Seaborn statistical visualizations with pandas integration for distributions, relationships, categorical comparisons, regression displays, pair plots, and heatmaps

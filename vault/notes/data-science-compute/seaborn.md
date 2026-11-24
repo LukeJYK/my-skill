@@ -18,6 +18,7 @@ created: 2026-11-22
 
 ## Related skills
 
+- [adjusttext](../uncategorized/adjusttext.md) — Use the Python adjustText package to automatically move matplotlib text labels so they do not overlap each other, points, or other artists
 - [matplotlib](matplotlib.md) — Creates and customizes scientific plots with Matplotlib
 - [scientific-visualization](../research-writing/scientific-visualization.md) — Creates and audits truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly
 
