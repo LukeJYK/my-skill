@@ -14,9 +14,10 @@ created: 2026-11-24
 
 **Related maps:** [Scientific Writing, Figures & Publishing](research-writing.md) | [Academic Paper & Nature Pipelines](academic-pipelines.md) | [Vault, Skills & Workflow Meta](vault-meta.md)
 
-## Skills (7)
+## Skills (8)
 
 - [consciousness-council](../notes/reasoning-ideation/consciousness-council.md) — Structures a multi-perspective council exercise for decisions, research trade-offs, and creative challenges
+- [hypogenic](../notes/reasoning-ideation/hypogenic.md) — Plans and audits use of ChicagoHAI HypoGeniC/HypoRefine for LLM-assisted hypothesis generation from labeled text datasets
 - [hypothesis-generation](../notes/reasoning-ideation/hypothesis-generation.md) — Formulates evidence-bounded scientific questions, candidate hypotheses, rival explanations, causal or associational claims, discriminating predictions, measurements, and...
 - [idea-evaluator](../notes/reasoning-ideation/idea-evaluator.md) — Evaluates a preliminary research idea against a five-dimension framework (Higher, Faster, Stronger, Cheaper, Broader) plus idea-lifecycle and student-capability matching...
 - [idea-refine](../notes/reasoning-ideation/idea-refine.md) — Refines raw ideas into sharp, actionable concepts through structured divergent and convergent thinking

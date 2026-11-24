@@ -8,7 +8,7 @@ created: 2026-11-24
 
 # Skills Index
 
-A navigable map of the **142 agent skills** in this vault, grouped into 12 domains. Each entry links to a per-skill note that wraps the original `SKILL.md` and holds your personal notes.
+A navigable map of the **143 agent skills** in this vault, grouped into 12 domains. Each entry links to a per-skill note that wraps the original `SKILL.md` and holds your personal notes.
 
 > [!tip] How to navigate
 > - **Find by name/synonym:** quick switcher (Cmd+O); skills carry aliases like `TDD`, `CDK`, `sklearn`.
@@ -89,11 +89,11 @@ Obsidian authoring, skill building/discovery, reproducibility, orchestration, an
 
 [autoskill](notes/vault-meta/autoskill.md), [find-skills](notes/vault-meta/find-skills.md), [get-available-resources](notes/vault-meta/get-available-resources.md)
 
-### [Reasoning, Ideation & Decision](maps/reasoning-ideation.md)  ·  7 skills
+### [Reasoning, Ideation & Decision](maps/reasoning-ideation.md)  ·  8 skills
 
 Multi-perspective deliberation, brainstorming, hypothesis generation, idea evaluation, and scenario analysis.
 
-[consciousness-council](notes/reasoning-ideation/consciousness-council.md), [hypothesis-generation](notes/reasoning-ideation/hypothesis-generation.md), [idea-evaluator](notes/reasoning-ideation/idea-evaluator.md), [idea-refine](notes/reasoning-ideation/idea-refine.md), [scientific-brainstorming](notes/reasoning-ideation/scientific-brainstorming.md), [vibe-research-workflow](notes/reasoning-ideation/vibe-research-workflow.md) … [see all 7 →](maps/reasoning-ideation.md)
+[consciousness-council](notes/reasoning-ideation/consciousness-council.md), [hypogenic](notes/reasoning-ideation/hypogenic.md), [hypothesis-generation](notes/reasoning-ideation/hypothesis-generation.md), [idea-evaluator](notes/reasoning-ideation/idea-evaluator.md), [idea-refine](notes/reasoning-ideation/idea-refine.md), [scientific-brainstorming](notes/reasoning-ideation/scientific-brainstorming.md) … [see all 8 →](maps/reasoning-ideation.md)
 
 ## All skills (A–Z)
 
@@ -119,7 +119,7 @@ Multi-perspective deliberation, brainstorming, hypothesis generation, idea evalu
 [generate-image](notes/documents-office/generate-image.md) · [geomaster](notes/data-science-compute/geomaster.md) · [geopandas](notes/data-science-compute/geopandas.md) · [get-available-resources](notes/vault-meta/get-available-resources.md) · [git-workflow-and-versioning](notes/software-engineering/git-workflow-and-versioning.md)
 
 **H**
-[hf-cli](notes/cloud-devops/hf-cli.md) · [hugging-science](notes/ml-ai/hugging-science.md) · [hypothesis-generation](notes/reasoning-ideation/hypothesis-generation.md)
+[hf-cli](notes/cloud-devops/hf-cli.md) · [hugging-science](notes/ml-ai/hugging-science.md) · [hypogenic](notes/reasoning-ideation/hypogenic.md) · [hypothesis-generation](notes/reasoning-ideation/hypothesis-generation.md)
 
 **I**
 [idea-evaluator](notes/reasoning-ideation/idea-evaluator.md) · [idea-refine](notes/reasoning-ideation/idea-refine.md) · [incremental-implementation](notes/software-engineering/incremental-implementation.md) · [interview-me](notes/agent-workflow/interview-me.md) · [intro-drafter](notes/research-writing/intro-drafter.md)

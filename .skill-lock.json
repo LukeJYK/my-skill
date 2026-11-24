@@ -1328,6 +1328,16 @@
       "skillFolderHash": "2078d0b239b20dd83e48d5cf0477a7cc2a2a98d4",
       "installedAt": "2026-11-24T19:01:48.869Z",
       "updatedAt": "2026-11-24T19:01:48.869Z"
+    },
+    "hypogenic": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "commit": "c21d13b3cc2894680229ba9959a53281acb9200e",
+      "skillPath": "skills/hypogenic/SKILL.md",
+      "skillFolderHash": "4840d72e02cbf1ac3cedfa2d91949550c45f8b53",
+      "installedAt": "2026-11-24T19:54:48.218Z",
+      "updatedAt": "2026-11-24T19:54:48.218Z"
     }
   },
   "dismissed": {
