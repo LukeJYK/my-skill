@@ -1,0 +1,24 @@
+---
+title: sympy
+tags:
+  - skill
+  - domain/data-science-compute
+source: sympy/SKILL.md
+created: 2026-11-22
+---
+
+# sympy
+
+> [!info] What it does
+> Performs exact symbolic mathematics with SymPy for algebra, calculus, equation solving, symbolic linear algebra, physics, and lambdify or LaTeX code generation. Use when a task needs symbolic results, explicit assumptions, or exact arithmetic; use NumPy or SciPy for purely numerical workloads.
+
+**Source:** [sympy/SKILL.md](sympy/SKILL.md)  ·  **Domain:** [Data Science, Stats & Scientific Computing](maps/data-science-compute.md)  ·  **Index:** [Skills Index](index.md)
+
+## Related skills
+
+_None auto-detected. Add your own links here, e.g. `[scanpy](scanpy.md)`._
+
+%% ---8<--- personal notes below are preserved on re-run ---8<--- %%
+
+## Notes
+

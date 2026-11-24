@@ -1,0 +1,24 @@
+---
+title: test-driven-development
+tags:
+  - skill
+  - domain/software-engineering
+source: test-driven-development/SKILL.md
+created: 2026-11-22
+---
+
+# test-driven-development
+
+> [!info] What it does
+> Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline and the request does not mention tests.
+
+**Source:** [test-driven-development/SKILL.md](test-driven-development/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Index:** [Skills Index](index.md)
+
+## Related skills
+
+_None auto-detected. Add your own links here, e.g. `[scanpy](scanpy.md)`._
+
+%% ---8<--- personal notes below are preserved on re-run ---8<--- %%
+
+## Notes
+

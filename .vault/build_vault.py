@@ -29,7 +29,7 @@ PERSONAL_MARKER = "%% ---8<--- personal notes below are preserved on re-run ---8
 CATEGORIES = [
     ("ml-ai", "Machine Learning & AI",
      "General ML/DL frameworks, model interpretability, RL, graph learning, and scientific model hubs.",
-     ["data-science-compute", "cloud-devops"],
+     ["data-science-compute", "cloud-devops", "agent-workflow"],
      ["scikit-learn", "pytorch-lightning", "transformers", "shap", "stable-baselines3", "pufferlib",
       "torch-geometric", "umap-learn", "aeon", "timesfm-forecasting", "hugging-science"]),
 
@@ -38,12 +38,13 @@ CATEGORIES = [
      ["ml-ai", "quantum-physics", "research-writing"],
      ["polars", "dask", "vaex", "zarr-python", "networkx", "sympy", "matlab", "statsmodels",
       "statistical-analysis", "scikit-survival", "pymc", "pymoo", "simpy", "geomaster", "geopandas",
-      "exploratory-data-analysis", "optimize-for-gpu", "usfiscaldata", "matplotlib", "seaborn"]),
+      "exploratory-data-analysis", "optimize-for-gpu", "usfiscaldata", "matplotlib", "seaborn",
+      "statistical-power", "uncertainty-and-units"]),
 
     ("quantum-physics", "Quantum, Physics & Materials",
-     "Quantum computing frameworks, open quantum systems, astronomy, fluid dynamics, and materials science.",
+     "Quantum computing frameworks, open quantum systems, astronomy, fluid dynamics, materials science, and battery modeling.",
      ["data-science-compute", "ml-ai"],
-     ["qiskit", "cirq", "pennylane", "qutip", "astropy", "fluidsim", "pymatgen"]),
+     ["qiskit", "cirq", "pennylane", "qutip", "astropy", "fluidsim", "pymatgen", "pybamm"]),
 
     ("research-writing", "Scientific Writing, Figures & Publishing",
      "Manuscript writing, figures and schematics, posters/slides, reference management, and pre-submission review.",
@@ -52,7 +53,7 @@ CATEGORIES = [
       "scientific-critical-thinking", "citation-management", "peer-review", "research-grants",
       "venue-templates", "latex-posters", "pptx-posters", "paper-2-web", "markdown-mermaid-writing",
       "figure-designer", "scholar-evaluation", "tech-paper-template", "benchmark-paper-template",
-      "intro-drafter", "pre-submission-reviewer", "pyzotero"]),
+      "intro-drafter", "pre-submission-reviewer", "pyzotero", "rebuttal-guidance"]),
 
     ("academic-pipelines", "Academic Paper & Nature Pipelines",
      "End-to-end multi-agent paper pipelines and the Nature-family writing/review/translation suite.",
@@ -76,22 +77,38 @@ CATEGORIES = [
 
     ("cloud-devops", "Cloud, Infra & MLOps",
      "AWS architecture and operations, serverless GPU compute, the Hugging Face CLI, and Nextflow pipelines.",
-     ["ml-ai", "vault-meta"],
+     ["ml-ai", "software-engineering", "vault-meta"],
      ["aws-agentic-ai", "aws-cdk-development", "aws-cost-operations", "aws-mcp-setup",
       "aws-serverless-eda", "modal", "hf-cli", "nextflow"]),
+
+    ("software-engineering", "Software Engineering Practices",
+     "Spec-, test- and source-driven development, planning, code review, debugging, security, performance, CI/CD, and shipping.",
+     ["cloud-devops", "agent-workflow", "vault-meta"],
+     ["spec-driven-development", "test-driven-development", "source-driven-development",
+      "constraint-driven-development", "doubt-driven-development", "planning-and-task-breakdown",
+      "incremental-implementation", "api-and-interface-design", "frontend-ui-engineering",
+      "browser-testing-with-devtools", "code-review-and-quality", "code-simplification",
+      "debugging-and-error-recovery", "security-and-hardening", "performance-optimization",
+      "observability-and-instrumentation", "ci-cd-and-automation", "git-workflow-and-versioning",
+      "documentation-and-adrs", "deprecation-and-migration", "shipping-and-launch"]),
+
+    ("agent-workflow", "Agents & Context Engineering",
+     "Agent harnesses, context setup, skill discovery, and eliciting what the user actually wants.",
+     ["software-engineering", "vault-meta", "reasoning-ideation"],
+     ["context-engineering", "using-agent-skills", "pi-agent", "interview-me"]),
 
     ("vault-meta", "Vault, Skills & Workflow Meta",
      "Obsidian authoring, skill building/discovery, reproducibility, orchestration, and resource detection.",
      ["cloud-devops", "reasoning-ideation"],
      ["obsidian-markdown", "obsidian-bases", "obsidian-cli", "json-canvas", "skill-builder",
-      "find-skills", "autoskill", "clawpathy-autoresearch", "repro-enforcer",
+      "find-skills", "autoskill", "clawpathy-autoresearch", "repro-enforcer", "bio-orchestrator",
       "get-available-resources"]),
 
     ("reasoning-ideation", "Reasoning, Ideation & Decision",
      "Multi-perspective deliberation, brainstorming, hypothesis generation, idea evaluation, and scenario analysis.",
      ["research-writing", "academic-pipelines", "vault-meta"],
      ["consciousness-council", "what-if-oracle", "dhdna-profiler", "scientific-brainstorming",
-      "hypothesis-generation", "idea-evaluator", "vibe-research-workflow", "hypogenic"]),
+      "hypothesis-generation", "idea-evaluator", "vibe-research-workflow", "hypogenic", "idea-refine"]),
 ]
 
 

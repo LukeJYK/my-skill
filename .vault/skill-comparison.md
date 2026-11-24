@@ -8,12 +8,12 @@ tags: [skills, inventory]
 
 对比对象：
 - **参考表**：你粘贴的 GitHub 列表（`LukeJYK/skillset`，提交 `c84b29a` "2026-06-09 skill set"），共 264 个
-- **已安装**：`~/.agents/skills`（与本仓库根目录一致），共 106 个
+- **已安装**：`~/.agents/skills`（与本仓库根目录一致），共 109 个
 
 | 类别 | 数量 |
 |---|---|
-| [[#✅ 已安装（在参考表中）]] | 76 |
-| [[#❌ 未安装（在参考表中）]] | 188 |
+| [[#✅ 已安装（在参考表中）]] | 79 |
+| [[#❌ 未安装（在参考表中）]] | 185 |
 | [[#➕ 已安装但不在参考表中]] | 30 |
 
 ## ✅ 已安装（在参考表中）
@@ -61,6 +61,8 @@ tags: [skills, inventory]
 | [[peer-review/SKILL\|peer-review]] | Prepares evidence-bounded, constructive peer-review drafts and structured manuscript assessments. Supports authorized review of scientific m… |
 | [[pennylane/SKILL\|pennylane]] | Builds and differentiates PennyLane quantum circuits, hybrid PyTorch or JAX models, molecular VQE and QAOA workflows. Use for variational qu… |
 | [[polars/SKILL\|polars]] | High-performance DataFrame library for Python ETL, analytics, and pandas migration. It supports expression-based data manipulation with lazy… |
+| [[pptx/SKILL\|pptx]] | Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch… |
+| [[pptx-posters/SKILL\|pptx-posters]] | Creates and audits editable scientific posters in macro-free PowerPoint (.pptx) from author-approved local content and assets. Used when the… |
 | [[pre-submission-reviewer/SKILL\|pre-submission-reviewer]] | Runs a pre-submission review of a technical paper across five dimensions: macro logic, writing details, English grammar, LaTeX formatting, a… |
 | [[pufferlib/SKILL\|pufferlib]] | Version-aware guidance for PufferLib reinforcement-learning environments, vectorization, policies, PuffeRL training, evaluation, and safe ch… |
 | [[pymc/SKILL\|pymc]] | Builds and checks Bayesian models with PyMC, including hierarchical models, NUTS MCMC, variational inference, mutable-data predictions, post… |
@@ -95,6 +97,7 @@ tags: [skills, inventory]
 | [[venue-templates/SKILL\|venue-templates]] | Prepares journal manuscripts, conference papers, research posters, and grant documents using venue-specific formatting guidance and bundled … |
 | [[vibe-research-workflow/SKILL\|vibe-research-workflow]] | Guides AI-assisted research across three sub-flows, Vibe Coding, Vibe Figure, and Vibe Writing, with behavioural rules that keep the user in… |
 | [[what-if-oracle/SKILL\|what-if-oracle]] | Supports structured what-if scenario analysis for research planning, experimental contingencies, and scientific project decisions. Explores … |
+| [[xlsx/SKILL\|xlsx]] | Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or… |
 | [[zarr-python/SKILL\|zarr-python]] | Stores and queries chunked N-D scientific arrays with Zarr-Python 3, including codecs, sharding, S3/GCS storage, and NumPy/Dask/Xarray integ… |
 
 ## ❌ 未安装（在参考表中）
@@ -115,14 +118,13 @@ tags: [skills, inventory]
 - **M**: `marker-dominance-mapper`, `market-research-reports`, `matchms`, `matlab`, `medchem`, `mendelian-randomisation`, `methylation-clock`, `molecular-dynamics`, `molfeat`, `multiqc-reporter`
 - **N**: `nature-academic-search`, `nature-citation`, `nature-data`, `nature-figure`, `nature-paper2ppt`, `nature-polishing`, `nature-reader`, `nature-response`, `nature-reviewer`, `nature-writing`, `ncbi-datasets`, `neurokit2`, `neuropixels-analysis`, `nextflow`, `nfcore-rnaseq-wrapper`, `nfcore-sarek-wrapper`, `nfcore-scrnaseq-wrapper`, `nutrigx-advisor`
 - **O**: `obsidian-bases`, `obsidian-cli`, `obsidian-markdown`, `omero-integration`, `omics-target-evidence-mapper`, `open-notebook`, `opentrons-integration`
-- **P**: `pacsomatic`, `paper-2-web`, `paperzilla`, `parallel-web`, `pathml`, `pathway-enricher`, `pathway-enrichment`, `pharmgx-reporter`, `phylogenetics`, `phylogenetics-builder`, `polars-bio`, `pptx`, `pptx-posters`, `primekg`, `profile-report`, `proteomics-clock`, `proteomics-de`, `protocols-io`, `protocolsio-integration`, `pubmed-summariser`, `pydeseq2`, `pydicom`, `pyhealth`, `pylabrobot`, `pymatgen`, `pyopenms`, `pysam`, `pytdc`
+- **P**: `pacsomatic`, `paper-2-web`, `paperzilla`, `parallel-web`, `pathml`, `pathway-enricher`, `pathway-enrichment`, `pharmgx-reporter`, `phylogenetics`, `phylogenetics-builder`, `polars-bio`, `primekg`, `profile-report`, `proteomics-clock`, `proteomics-de`, `protocols-io`, `protocolsio-integration`, `pubmed-summariser`, `pydeseq2`, `pydicom`, `pyhealth`, `pylabrobot`, `pymatgen`, `pyopenms`, `pysam`, `pytdc`
 - **R**: `rare-disease-rnaseq`, `rdkit`, `recombinator`, `repro-enforcer`, `rnaseq-de`, `rowan`
 - **S**: `sample-qc-triage`, `scanpy`, `scikit-bio`, `scikit-survival`, `scrna-embedding`, `scrna-orchestrator`, `scvelo`, `scvi-tools`, `seq-wrangler`, `skill-builder`, `soul2dna`, `struct-predictor`
 - **T**: `target-validation-scorer`, `tiledbvcf`, `torchdrug`, `treatment-plans`, `turingdb-graph`
 - **U**: `ukb-navigator`, `ukb-ppp-region-fetch`, `usfiscaldata`
 - **V**: `variant-annotation`, `vcf-annotator`
 - **W**: `wes-clinical-report-en`, `wes-clinical-report-es`, `wgs-prs`
-- **X**: `xlsx`
 
 ## ➕ 已安装但不在参考表中
 
