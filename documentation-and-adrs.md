@@ -7,7 +7,7 @@ tags:
   - domain/software-engineering
 domain: software-engineering
 status: untried
-source: documentation-and-adrs/SKILL.md
+source: skills/documentation-and-adrs/SKILL.md
 created: 2026-11-22
 ---
 
@@ -16,7 +16,7 @@ created: 2026-11-22
 > [!info] What it does
 > Records decisions and documentation. Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, or when you need to record context that future engineers and agents will need to understand the codebase.
 
-**Source:** [documentation-and-adrs/SKILL.md](documentation-and-adrs/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [documentation-and-adrs/SKILL.md](skills/documentation-and-adrs/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

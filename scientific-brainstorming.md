@@ -5,7 +5,7 @@ tags:
   - domain/reasoning-ideation
 domain: reasoning-ideation
 status: untried
-source: scientific-brainstorming/SKILL.md
+source: skills/scientific-brainstorming/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,11 +14,11 @@ created: 2026-11-22
 > [!info] What it does
 > Facilitates evidence-aware scientific ideation with independent generation, structured discussion, explicit assumptions, transparent evaluation, adversarial review, and decision logs. Use for early-stage research brainstorming or prioritizing candidate directions; hand off empirical validation, study design, ethics or regulatory review, and clinical questions to appropriate experts or skills.
 
-**Source:** [scientific-brainstorming/SKILL.md](scientific-brainstorming/SKILL.md)  ·  **Domain:** [Reasoning, Ideation & Decision](maps/reasoning-ideation.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [scientific-brainstorming/SKILL.md](skills/scientific-brainstorming/SKILL.md)  ·  **Domain:** [Reasoning, Ideation & Decision](maps/reasoning-ideation.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 
-_None auto-detected. Add your own links here, e.g. `[scanpy](scanpy.md)`._
+- [brainstorming](brainstorming.md) — You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a...
 
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 

@@ -14,9 +14,10 @@ created: 2026-11-24
 
 **Related maps:** [Machine Learning & AI](ml-ai.md) | [Quantum, Physics & Materials](quantum-physics.md) | [Scientific Writing, Figures & Publishing](research-writing.md)
 
-## Skills (18)
+## Skills (19)
 
 - [dask](../dask.md) — Scales pandas, NumPy, and custom Python research workflows beyond memory or across clusters with Dask
+- [exploratory-data-analysis](../exploratory-data-analysis.md) — Performs bounded, local exploratory analysis of explicitly supported scientific files
 - [geomaster](../geomaster.md) — Supports geospatial research workflows for remote sensing, vector and raster GIS, spatial statistics, terrain and network analysis, and machine learning for Earth observation
 - [geopandas](../geopandas.md) — Guidance and local audit tools for Python workflows that directly use GeoPandas GeoSeries, GeoDataFrame, spatial operations, or vector-data I/O
 - [matplotlib](../matplotlib.md) — Creates and customizes scientific plots with Matplotlib

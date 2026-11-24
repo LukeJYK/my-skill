@@ -1,0 +1,24 @@
+---
+title: receiving-code-review
+tags:
+  - skill
+domain: uncategorized
+status: untried
+source: skills/receiving-code-review/SKILL.md
+created: 2026-11-24
+---
+
+# receiving-code-review
+
+> [!info] What it does
+> Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation
+
+**Source:** [receiving-code-review/SKILL.md](skills/receiving-code-review/SKILL.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+
+## Related skills
+
+_None auto-detected. Add your own links here, e.g. `[scanpy](scanpy.md)`._
+
+%% ---8<--- personal notes below are preserved on re-run ---8<--- %%
+
+## Notes

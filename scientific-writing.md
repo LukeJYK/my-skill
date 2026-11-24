@@ -5,7 +5,7 @@ tags:
   - domain/research-writing
 domain: research-writing
 status: untried
-source: scientific-writing/SKILL.md
+source: skills/scientific-writing/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Drafts, revises, and audits scientific manuscripts or reports with explicit evidence provenance, reporting-guideline coverage, authorship accountability, confidentiality controls, and local consistency checks. Use for manuscript sections, references, declarations, tables, figures, or submission preparation when scientific accuracy and traceability matter.
 
-**Source:** [scientific-writing/SKILL.md](scientific-writing/SKILL.md)  ·  **Domain:** [Scientific Writing, Figures & Publishing](maps/research-writing.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [scientific-writing/SKILL.md](skills/scientific-writing/SKILL.md)  ·  **Domain:** [Scientific Writing, Figures & Publishing](maps/research-writing.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

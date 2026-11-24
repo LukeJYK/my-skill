@@ -14,9 +14,10 @@ created: 2026-11-24
 
 **Related maps:** [Scientific Writing, Figures & Publishing](research-writing.md) | [Academic Paper & Nature Pipelines](academic-pipelines.md) | [Vault, Skills & Workflow Meta](vault-meta.md)
 
-## Skills (6)
+## Skills (7)
 
 - [consciousness-council](../consciousness-council.md) — Structures a multi-perspective council exercise for decisions, research trade-offs, and creative challenges
+- [hypothesis-generation](../hypothesis-generation.md) — Formulates evidence-bounded scientific questions, candidate hypotheses, rival explanations, causal or associational claims, discriminating predictions, measurements, and...
 - [idea-evaluator](../idea-evaluator.md) — Evaluates a preliminary research idea against a five-dimension framework (Higher, Faster, Stronger, Cheaper, Broader) plus idea-lifecycle and student-capability matching...
 - [idea-refine](../idea-refine.md) — Refines raw ideas into sharp, actionable concepts through structured divergent and convergent thinking
 - [scientific-brainstorming](../scientific-brainstorming.md) — Facilitates evidence-aware scientific ideation with independent generation, structured discussion, explicit assumptions, transparent evaluation, adversarial review, and decision logs

@@ -5,7 +5,7 @@ tags:
   - domain/research-writing
 domain: research-writing
 status: untried
-source: scholar-evaluation/SKILL.md
+source: skills/scholar-evaluation/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Provides qualitative-first, evidence-traceable developmental review of scholarly works and audit low-stakes research-assessment rubrics with optional local quality controls. Never use for ranking people or consequential decisions.
 
-**Source:** [scholar-evaluation/SKILL.md](scholar-evaluation/SKILL.md)  ·  **Domain:** [Scientific Writing, Figures & Publishing](maps/research-writing.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [scholar-evaluation/SKILL.md](skills/scholar-evaluation/SKILL.md)  ·  **Domain:** [Scientific Writing, Figures & Publishing](maps/research-writing.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

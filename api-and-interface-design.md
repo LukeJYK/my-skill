@@ -5,7 +5,7 @@ tags:
   - domain/software-engineering
 domain: software-engineering
 status: untried
-source: api-and-interface-design/SKILL.md
+source: skills/api-and-interface-design/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.
 
-**Source:** [api-and-interface-design/SKILL.md](api-and-interface-design/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [api-and-interface-design/SKILL.md](skills/api-and-interface-design/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

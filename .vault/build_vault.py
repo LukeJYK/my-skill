@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Build the human-navigation layer for the skills vault.
 
-Generates, for every skill folder that contains a SKILL.md:
+Generates, for every skills/<skill>/ folder that contains a SKILL.md:
   - <skill>.md            a root-level wrapper note (safe to hand-edit; the
                           "Personal notes" section AND your frontmatter edits
                           to status / rating / aliases are preserved on re-run)
   - maps/<domain>.md      one map (MOC) note per domain, linking to wrappers
   - index.md              master index linking to maps + every wrapper (A-Z)
 
-The original <skill>/SKILL.md files are never touched, so an external skills
+The original skills/<skill>/SKILL.md files are never touched, so an external skills
 CLI can keep managing them remotely. Hand-authored files (skills.base,
 README.md, .obsidian/*) are also never touched. Re-run this script after
 adding/removing skills.
@@ -24,6 +24,9 @@ import sys
 from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# skill folders live in ROOT/skills (the skills CLI's flat canonical store);
+# the notes, maps and index this script writes stay at ROOT beside it.
+SKILLS_DIR = os.path.join(ROOT, "skills")
 MAPS_DIR = os.path.join(ROOT, "maps")
 TODAY = date.today().isoformat()
 # one-time: regenerate aliases even if a wrapper already has an aliases key.
@@ -171,7 +174,7 @@ CATEGORIES = [
 
 # ---------------------------------------------------------------------------
 def read_description(skill):
-    path = os.path.join(ROOT, skill, "SKILL.md")
+    path = os.path.join(SKILLS_DIR, skill, "SKILL.md")
     if not os.path.isfile(path):
         return None
     with open(path, "r", encoding="utf-8") as f:
@@ -235,10 +238,10 @@ def gen_aliases(skill, desc):
 
 def discover_skills():
     found = set()
-    for name in os.listdir(ROOT):
+    for name in os.listdir(SKILLS_DIR):
         if name.startswith("."):
             continue
-        p = os.path.join(ROOT, name)
+        p = os.path.join(SKILLS_DIR, name)
         if os.path.isdir(p) and os.path.isfile(os.path.join(p, "SKILL.md")):
             found.add(name)
     return found
@@ -414,7 +417,7 @@ def main():
         L.append(f"status: {status}")
         if rating is not None:
             L.append(f"rating: {rating}")
-        L.append(f"source: {s}/SKILL.md")
+        L.append(f"source: skills/{s}/SKILL.md")
         L.append(f"created: {created}")
         L.append("---")
         L.append("")
@@ -423,7 +426,7 @@ def main():
         L.append("> [!info] What it does")
         L.append(f"> {full_desc[s] or '(no description)'}")
         L.append("")
-        nav = [f"**Source:** [{s}/SKILL.md]({s}/SKILL.md)"]
+        nav = [f"**Source:** [{s}/SKILL.md](skills/{s}/SKILL.md)"]
         if key != "uncategorized":
             nav.append(f"**Domain:** [{dtitle}](maps/{key}.md)")
         nav.append("**Table:** [skills.base](skills.base)")

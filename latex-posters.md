@@ -5,7 +5,7 @@ tags:
   - domain/research-writing
 domain: research-writing
 status: untried
-source: latex-posters/SKILL.md
+source: skills/latex-posters/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Creates research posters in LaTeX using beamerposter, tikzposter, or baposter. Use for conference posters, academic presentations, multi-column scientific layouts, figure integration, typography, compilation, and PDF preflight.
 
-**Source:** [latex-posters/SKILL.md](latex-posters/SKILL.md)  ·  **Domain:** [Scientific Writing, Figures & Publishing](maps/research-writing.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [latex-posters/SKILL.md](skills/latex-posters/SKILL.md)  ·  **Domain:** [Scientific Writing, Figures & Publishing](maps/research-writing.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

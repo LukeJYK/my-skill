@@ -7,7 +7,7 @@ tags:
   - domain/ml-ai
 domain: ml-ai
 status: untried
-source: umap-learn/SKILL.md
+source: skills/umap-learn/SKILL.md
 created: 2026-11-22
 ---
 
@@ -16,7 +16,7 @@ created: 2026-11-22
 > [!info] What it does
 > Applies UMAP-learn to nonlinear dimensionality reduction, 2D/3D embeddings, clustering preprocessing, supervised or semi-supervised UMAP, DensMAP, AlignedUMAP, and Parametric UMAP workflows.
 
-**Source:** [umap-learn/SKILL.md](umap-learn/SKILL.md)  ·  **Domain:** [Machine Learning & AI](maps/ml-ai.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [umap-learn/SKILL.md](skills/umap-learn/SKILL.md)  ·  **Domain:** [Machine Learning & AI](maps/ml-ai.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

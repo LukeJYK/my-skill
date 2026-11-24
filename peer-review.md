@@ -5,7 +5,7 @@ tags:
   - domain/research-writing
 domain: research-writing
 status: untried
-source: peer-review/SKILL.md
+source: skills/peer-review/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Prepares evidence-bounded, constructive peer-review drafts and structured manuscript assessments. Supports authorized review of scientific manuscripts, protocols, preprints, or research proposals; reporting-guideline selection; claim–evidence checks; methods, statistics, reproducibility, ethics, figure/table, and citation critique; or revision-response planning.
 
-**Source:** [peer-review/SKILL.md](peer-review/SKILL.md)  ·  **Domain:** [Scientific Writing, Figures & Publishing](maps/research-writing.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [peer-review/SKILL.md](skills/peer-review/SKILL.md)  ·  **Domain:** [Scientific Writing, Figures & Publishing](maps/research-writing.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""check-skills.py — health check for every skill folder in this repo.
+"""check-skills.py — health check for every skills/<name>/ folder in this repo.
 
 Usage: python3 check-skills.py [--strict] [--quiet] [--stale-days N]
   --strict      also exit non-zero on warnings
@@ -139,6 +139,7 @@ def check_skill(d, lock_names, stale_days):
         if re.match(r"^[a-z][a-z0-9+.-]*:", target) or target.startswith(("#", "/")):
             continue  # URL, mailto:, anchor, absolute path
         path = target.split("#", 1)[0].split("?", 1)[0]
+        path = re.sub(r"^\$?\{baseDir\}/", "", path)  # placeholder for the skill folder
         if not path or ("/" not in path and "." not in path):
             continue  # placeholder like (url)
         if (d / path).exists():
@@ -172,8 +173,8 @@ def check_skill(d, lock_names, stale_days):
     else:
         nfm, _ = parse_frontmatter(note.read_text(encoding="utf-8", errors="replace"))
         src = str((nfm or {}).get("source") or "")
-        if src and src != f"{d.name}/SKILL.md":
-            warns.append(f"vault note source is `{src}`, expected `{d.name}/SKILL.md`")
+        if src and src != f"skills/{d.name}/SKILL.md":
+            warns.append(f"vault note source is `{src}`, expected `skills/{d.name}/SKILL.md`")
 
     meta = fm.get("metadata") if isinstance(fm.get("metadata"), dict) else {}
     reviewed = meta.get("last-reviewed") or fm.get("last-reviewed")
@@ -196,7 +197,7 @@ def main():
     ap.add_argument("--stale-days", type=int, default=180)
     args = ap.parse_args()
 
-    skills = sorted(p.parent for p in REPO.glob("*/SKILL.md"))
+    skills = sorted(p.parent for p in (REPO / "skills").glob("*/SKILL.md"))
     lock_path = REPO / ".skill-lock.json"
     lock_names = None
     global_errors = []

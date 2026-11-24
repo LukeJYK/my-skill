@@ -5,7 +5,7 @@ tags:
   - domain/ml-ai
 domain: ml-ai
 status: untried
-source: aeon/SKILL.md
+source: skills/aeon/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialized algorithms beyond standard ML approaches. Particularly suited for univariate and multivariate time series analysis with scikit-learn compatible APIs.
 
-**Source:** [aeon/SKILL.md](aeon/SKILL.md)  ·  **Domain:** [Machine Learning & AI](maps/ml-ai.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [aeon/SKILL.md](skills/aeon/SKILL.md)  ·  **Domain:** [Machine Learning & AI](maps/ml-ai.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

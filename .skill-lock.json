@@ -1318,6 +1318,16 @@
       "skillFolderHash": "3c07fa0b66ec665df1b17f5e09ab3e735f627029",
       "installedAt": "2026-11-24T18:54:13.549Z",
       "updatedAt": "2026-11-24T18:54:13.549Z"
+    },
+    "zeroize-audit": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/trailofbits/skills.git",
+      "commit": "149d7b21f4067765b82e67029730b42d228ef4b4",
+      "skillPath": "plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
+      "skillFolderHash": "2078d0b239b20dd83e48d5cf0477a7cc2a2a98d4",
+      "installedAt": "2026-11-24T19:01:48.869Z",
+      "updatedAt": "2026-11-24T19:01:48.869Z"
     }
   },
   "dismissed": {

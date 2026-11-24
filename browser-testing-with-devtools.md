@@ -5,7 +5,7 @@ tags:
   - domain/software-engineering
 domain: software-engineering
 status: untried
-source: browser-testing-with-devtools/SKILL.md
+source: skills/browser-testing-with-devtools/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Tests in real browsers via Chrome DevTools MCP. Use when building or debugging anything that runs in a browser. Use when you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data. Requires the chrome-devtools MCP server to be configured.
 
-**Source:** [browser-testing-with-devtools/SKILL.md](browser-testing-with-devtools/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [browser-testing-with-devtools/SKILL.md](skills/browser-testing-with-devtools/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

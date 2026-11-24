@@ -7,7 +7,7 @@ tags:
   - domain/data-science-compute
 domain: data-science-compute
 status: untried
-source: geopandas/SKILL.md
+source: skills/geopandas/SKILL.md
 created: 2026-11-22
 ---
 
@@ -16,7 +16,7 @@ created: 2026-11-22
 > [!info] What it does
 > Guidance and local audit tools for Python workflows that directly use GeoPandas GeoSeries, GeoDataFrame, spatial operations, or vector-data I/O.
 
-**Source:** [geopandas/SKILL.md](geopandas/SKILL.md)  ·  **Domain:** [Data Science, Stats & Scientific Computing](maps/data-science-compute.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [geopandas/SKILL.md](skills/geopandas/SKILL.md)  ·  **Domain:** [Data Science, Stats & Scientific Computing](maps/data-science-compute.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

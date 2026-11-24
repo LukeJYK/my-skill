@@ -5,7 +5,7 @@ tags:
   - domain/vault-meta
 domain: vault-meta
 status: untried
-source: get-available-resources/SKILL.md
+source: skills/get-available-resources/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Detects host inventory and effective CPU, memory, disk, scheduler, container, and accelerator limits when a user asks for resource-aware planning or before a clearly resource-sensitive local workload. Produces a redacted JSON snapshot and conservative planning helpers without stress tests or assuming visible host hardware is usable.
 
-**Source:** [get-available-resources/SKILL.md](get-available-resources/SKILL.md)  ·  **Domain:** [Vault, Skills & Workflow Meta](maps/vault-meta.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [get-available-resources/SKILL.md](skills/get-available-resources/SKILL.md)  ·  **Domain:** [Vault, Skills & Workflow Meta](maps/vault-meta.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

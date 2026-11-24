@@ -14,9 +14,10 @@ created: 2026-11-24
 
 **Related maps:** [Scientific Writing, Figures & Publishing](research-writing.md) | [Academic Paper & Nature Pipelines](academic-pipelines.md) | [Documents, Office & Media](documents-office.md)
 
-## Skills (4)
+## Skills (5)
 
 - [exa-search](../exa-search.md) — Searches scientific and technical web content with Exa and extracts page or PDF text from URLs in batches
 - [literature-review](../literature-review.md) — Conducts systematic, scoping, and narrative literature reviews using PubMed, arXiv, bioRxiv, Semantic Scholar, and other appropriate sources
 - [paper-lookup](../paper-lookup.md) — Searches 18 scholarly APIs for papers, preprints, citations, open-access full text, repository records, and journal OA status, and returns results with reproducible provenance
+- [parallel-web](../parallel-web.md) — Uses Parallel CLI for web search, URL extraction, deep research, structured data enrichment, entity discovery, and recurring web monitoring
 - [research-lookup](../research-lookup.md) — Compiles current scholarly evidence for a scientific manuscript or research brief when the user explicitly asks to gather literature, references, background evidence, competing...

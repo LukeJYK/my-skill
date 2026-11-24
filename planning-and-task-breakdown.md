@@ -5,7 +5,7 @@ tags:
   - domain/software-engineering
 domain: software-engineering
 status: untried
-source: planning-and-task-breakdown/SKILL.md
+source: skills/planning-and-task-breakdown/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.
 
-**Source:** [planning-and-task-breakdown/SKILL.md](planning-and-task-breakdown/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [planning-and-task-breakdown/SKILL.md](skills/planning-and-task-breakdown/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

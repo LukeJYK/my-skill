@@ -5,7 +5,7 @@ tags:
   - domain/quantum-physics
 domain: quantum-physics
 status: untried
-source: qiskit/SKILL.md
+source: skills/qiskit/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Builds, simulates, transpiles, and executes quantum circuits with Qiskit and IBM Quantum Runtime. Use for Qiskit 2.x circuits and operators, V2 Sampler or Estimator primitives, target-aware transpilation, local or noisy simulation, IBM QPU execution, Runtime sessions or batches, error mitigation, and Qiskit ecosystem packages.
 
-**Source:** [qiskit/SKILL.md](qiskit/SKILL.md)  ·  **Domain:** [Quantum, Physics & Materials](maps/quantum-physics.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [qiskit/SKILL.md](skills/qiskit/SKILL.md)  ·  **Domain:** [Quantum, Physics & Materials](maps/quantum-physics.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

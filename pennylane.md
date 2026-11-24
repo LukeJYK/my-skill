@@ -5,7 +5,7 @@ tags:
   - domain/quantum-physics
 domain: quantum-physics
 status: untried
-source: pennylane/SKILL.md
+source: skills/pennylane/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Builds and differentiates PennyLane quantum circuits, hybrid PyTorch or JAX models, molecular VQE and QAOA workflows. Use for variational quantum algorithms, quantum machine learning, simulator validation, and moving validated circuits to provider plugins. For hardware-specific compilation use qiskit or cirq; for open-system dynamics use qutip.
 
-**Source:** [pennylane/SKILL.md](pennylane/SKILL.md)  ·  **Domain:** [Quantum, Physics & Materials](maps/quantum-physics.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [pennylane/SKILL.md](skills/pennylane/SKILL.md)  ·  **Domain:** [Quantum, Physics & Materials](maps/quantum-physics.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

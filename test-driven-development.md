@@ -7,7 +7,7 @@ tags:
   - domain/software-engineering
 domain: software-engineering
 status: untried
-source: test-driven-development/SKILL.md
+source: skills/test-driven-development/SKILL.md
 created: 2026-11-22
 ---
 
@@ -16,7 +16,7 @@ created: 2026-11-22
 > [!info] What it does
 > Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline and the request does not mention tests.
 
-**Source:** [test-driven-development/SKILL.md](test-driven-development/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [test-driven-development/SKILL.md](skills/test-driven-development/SKILL.md)  ·  **Domain:** [Software Engineering Practices](maps/software-engineering.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 

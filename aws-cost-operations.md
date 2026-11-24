@@ -5,7 +5,7 @@ tags:
   - domain/cloud-devops
 domain: cloud-devops
 status: untried
-source: aws-cost-operations/SKILL.md
+source: skills/aws-cost-operations/SKILL.md
 created: 2026-11-22
 ---
 
@@ -14,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > AWS cost optimization, monitoring, and operational excellence expert. Use when analyzing AWS bills, estimating costs, setting up CloudWatch alarms, querying logs, auditing CloudTrail activity, or assessing security posture. Essential when user mentions AWS costs, spending, billing, budget, pricing, CloudWatch, observability, monitoring, alerting, CloudTrail, audit, or wants to optimize AWS infrastructure costs and operational efficiency.
 
-**Source:** [aws-cost-operations/SKILL.md](aws-cost-operations/SKILL.md)  ·  **Domain:** [Cloud, Infra & MLOps](maps/cloud-devops.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
+**Source:** [aws-cost-operations/SKILL.md](skills/aws-cost-operations/SKILL.md)  ·  **Domain:** [Cloud, Infra & MLOps](maps/cloud-devops.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 
