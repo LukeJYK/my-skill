@@ -2,7 +2,7 @@
 title: Vault, Skills & Workflow Meta
 tags:
   - skill-map
-created: 2026-11-22
+created: 2026-11-24
 ---
 
 # Vault, Skills & Workflow Meta

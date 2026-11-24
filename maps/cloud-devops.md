@@ -2,7 +2,7 @@
 title: Cloud, Infra & MLOps
 tags:
   - skill-map
-created: 2026-11-22
+created: 2026-11-24
 ---
 
 # Cloud, Infra & MLOps

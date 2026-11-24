@@ -3,6 +3,8 @@ title: pdf
 tags:
   - skill
   - domain/documents-office
+domain: documents-office
+status: untried
 source: pdf/SKILL.md
 created: 2026-11-22
 ---
@@ -12,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.
 
-**Source:** [pdf/SKILL.md](pdf/SKILL.md)  ·  **Domain:** [Documents, Office & Media](maps/documents-office.md)  ·  **Index:** [Skills Index](index.md)
+**Source:** [pdf/SKILL.md](pdf/SKILL.md)  ·  **Domain:** [Documents, Office & Media](maps/documents-office.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 
@@ -29,4 +31,3 @@ created: 2026-11-22
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 
 ## Notes
-

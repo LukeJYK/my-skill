@@ -2,7 +2,7 @@
 title: Literature Search & Knowledge Discovery
 tags:
   - skill-map
-created: 2026-11-22
+created: 2026-11-24
 ---
 
 # Literature Search & Knowledge Discovery

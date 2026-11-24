@@ -3,6 +3,8 @@ title: find-skills
 tags:
   - skill
   - domain/vault-meta
+domain: vault-meta
+status: untried
 source: find-skills/SKILL.md
 created: 2026-11-22
 ---
@@ -12,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.
 
-**Source:** [find-skills/SKILL.md](find-skills/SKILL.md)  ·  **Domain:** [Vault, Skills & Workflow Meta](maps/vault-meta.md)  ·  **Index:** [Skills Index](index.md)
+**Source:** [find-skills/SKILL.md](find-skills/SKILL.md)  ·  **Domain:** [Vault, Skills & Workflow Meta](maps/vault-meta.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 
@@ -21,4 +23,3 @@ _None auto-detected. Add your own links here, e.g. `[scanpy](scanpy.md)`._
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 
 ## Notes
-

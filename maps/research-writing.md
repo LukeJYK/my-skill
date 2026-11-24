@@ -2,7 +2,7 @@
 title: Scientific Writing, Figures & Publishing
 tags:
   - skill-map
-created: 2026-11-22
+created: 2026-11-24
 ---
 
 # Scientific Writing, Figures & Publishing

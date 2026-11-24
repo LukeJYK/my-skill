@@ -3,15 +3,20 @@
 
 Generates, for every skill folder that contains a SKILL.md:
   - <skill>.md            a root-level wrapper note (safe to hand-edit; the
-                          "Personal notes" section is preserved on re-run)
+                          "Personal notes" section AND your frontmatter edits
+                          to status / rating / aliases are preserved on re-run)
   - maps/<domain>.md      one map (MOC) note per domain, linking to wrappers
   - index.md              master index linking to maps + every wrapper (A-Z)
 
 The original <skill>/SKILL.md files are never touched, so an external skills
-CLI can keep managing them remotely. Re-run this script after adding/removing
-skills; your personal notes in each wrapper are kept.
+CLI can keep managing them remotely. Hand-authored files (skills.base,
+README.md, .obsidian/*) are also never touched. Re-run this script after
+adding/removing skills.
 
-Usage:  python3 .vault/build_vault.py
+Usage:  python3 .vault/build_vault.py [--prune] [--graph] [--force-aliases]
+  --prune          delete wrapper/map notes for skills/domains that no longer exist
+  --graph          rewrite .obsidian/graph.json colors + filter (quit Obsidian first)
+  --force-aliases  regenerate aliases on every wrapper (overwrites hand edits)
 """
 import os
 import re
@@ -21,7 +26,59 @@ from datetime import date
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAPS_DIR = os.path.join(ROOT, "maps")
 TODAY = date.today().isoformat()
+# one-time: regenerate aliases even if a wrapper already has an aliases key.
+# Do NOT use after you have hand-curated aliases.
+FORCE_ALIASES = "--force-aliases" in sys.argv
+# delete generated wrapper notes whose skill folder no longer exists, and map
+# notes whose domain is no longer in CATEGORIES (orphans).
+PRUNE = "--prune" in sys.argv
+# rewrite .obsidian/graph.json color groups + filter. QUIT Obsidian first, or it
+# will overwrite the file from memory.
+GRAPH = "--graph" in sys.argv
+
+# graph color per domain (24-bit RGB ints = 0xRRGGBB), keyed by category key.
+PALETTE = {
+    "ml-ai": 0xBFEF45, "data-science-compute": 0xFABED4, "quantum-physics": 0x469990,
+    "research-writing": 0xDCBEFF, "academic-pipelines": 0x9A6324,
+    "literature-discovery": 0xFFFAC8, "documents-office": 0x800000,
+    "cloud-devops": 0xAAFFC3, "software-engineering": 0xFF6B6B,
+    "agent-workflow": 0x2EC4B6, "vault-meta": 0x808000, "reasoning-ideation": 0x000075,
+}
+# graph shows only generated notes (hides the ~870 untagged files inside skill folders)
+GRAPH_SEARCH = "tag:#skill OR tag:#skill-map OR tag:#moc"
 PERSONAL_MARKER = "%% ---8<--- personal notes below are preserved on re-run ---8<--- %%"
+
+# acronyms too generic to be useful aliases (auto-extracted from descriptions)
+STOP = {"API", "CLI", "ML", "AI", "QC", "DNA", "RNA", "GPU", "CPU", "PDF", "CSV",
+        "JSON", "HTML", "REST", "SDK", "LLM", "GO", "3D", "2D", "ID", "OS", "UI",
+        "NGS", "PCA", "URL", "HTTP", "IO", "OK", "FAIR", "METHODOLOGY"}
+
+# Curated search terms that Obsidian's fuzzy quick-switcher would NOT match from
+# the skill id itself. Extend freely; on rebuild these only apply to wrappers
+# that don't yet have an `aliases:` key (or with --force-aliases).
+SYNONYMS = {
+    # software engineering
+    "test-driven-development": ["TDD"], "spec-driven-development": ["SDD"],
+    "ci-cd-and-automation": ["CI/CD", "GitHub Actions"], "documentation-and-adrs": ["ADR"],
+    "git-workflow-and-versioning": ["branching", "semver"],
+    "observability-and-instrumentation": ["logging", "tracing", "metrics"],
+    "security-and-hardening": ["OWASP"], "performance-optimization": ["profiling"],
+    # cloud / ML
+    "aws-cdk-development": ["CDK"], "aws-serverless-eda": ["Lambda", "EventBridge"],
+    "aws-agentic-ai": ["Bedrock", "AgentCore"], "hf-cli": ["huggingface"],
+    "transformers": ["huggingface"], "optimize-for-gpu": ["CUDA"],
+    "scikit-learn": ["sklearn"], "pytorch-lightning": ["PyTorch"],
+    "stable-baselines3": ["SB3", "RL"], "umap-learn": ["UMAP"],
+    # stats / science
+    "statistical-power": ["sample size"], "uncertainty-and-units": ["pint"],
+    "pybamm": ["battery"], "geopandas": ["GIS"],
+    # writing / research
+    "rebuttal-guidance": ["rebuttal", "response to reviewers"],
+    "literature-review": ["systematic review"], "pyzotero": ["Zotero"],
+    "consciousness-council": ["panel", "council"],
+    # office
+    "docx": ["Word"], "pptx": ["PowerPoint"], "xlsx": ["Excel"],
+}
 
 # ---------------------------------------------------------------------------
 # Domain definition: ordered. key -> (title, scope, related_keys, [skills])
@@ -156,6 +213,26 @@ def one_liner(desc, limit=185):
     return out
 
 
+def gen_aliases(skill, desc):
+    """Curated synonyms + tool acronyms in parentheses in the FIRST sentence."""
+    al = list(SYNONYMS.get(skill, []))
+    first = re.split(r"(?<=[.;])\s+", desc or "", maxsplit=1)[0]
+    for m in re.finditer(r"\(([^)]{1,40})\)", first):
+        for tok in re.split(r"[,/]| or | and ", m.group(1)):
+            tok = tok.strip()
+            if (re.fullmatch(r"[A-Za-z][A-Za-z0-9.+-]{1,14}", tok)
+                    and any(c.isupper() for c in tok)
+                    and tok.upper() not in STOP
+                    and tok.lower() != skill.lower()):
+                al.append(tok)
+    seen, out = set(), []
+    for a in al:
+        if a.lower() not in seen:
+            seen.add(a.lower())
+            out.append(a)
+    return out[:5]
+
+
 def discover_skills():
     found = set()
     for name in os.listdir(ROOT):
@@ -185,24 +262,113 @@ def build_related(skills, full_desc):
     return edges
 
 
-def preserved_notes(skill):
-    """Return the personal-notes block from an existing wrapper, if any."""
+def parse_existing(skill):
+    """Read user-editable bits from an existing wrapper so re-runs preserve them."""
     path = os.path.join(ROOT, skill + ".md")
     if not os.path.isfile(path):
-        return None, None
+        return None
     txt = open(path, encoding="utf-8").read()
-    created = None
-    cm = re.search(r"^created:\s*(.+)$", txt, re.MULTILINE)
-    if cm:
-        created = cm.group(1).strip()
+    m = re.match(r"^---\s*\n(.*?)\n---\s*\n", txt, re.DOTALL)
+    fm = m.group(1) if m else ""
+    data = {}
+    for key in ("created", "status", "rating"):
+        km = re.search(rf"^{key}:\s*(.+)$", fm, re.MULTILINE)
+        if km:
+            data[key] = km.group(1).strip()
+    # None => no aliases key at all (auto-generate); [] => user set it empty (respect)
+    aliases = None
+    block = re.search(r"^aliases:\s*\n((?:[ \t]*-[ \t].*\n?)+)", fm, re.MULTILINE)
+    inline = re.search(r"^aliases:\s*\[(.*)\]\s*$", fm, re.MULTILINE)
+    empty = re.search(r"^aliases:\s*(\[\s*\]|)\s*$", fm, re.MULTILINE)
+    if block:
+        aliases = []
+        for line in block.group(1).splitlines():
+            lm = re.match(r"[ \t]*-[ \t]+(.*)$", line)
+            if lm:
+                aliases.append(lm.group(1).strip().strip("'\""))
+    elif inline:
+        aliases = [a.strip().strip("'\"") for a in inline.group(1).split(",") if a.strip()]
+    elif empty:
+        aliases = []
+    data["aliases"] = aliases
     idx = txt.find(PERSONAL_MARKER)
-    if idx == -1:
-        return None, created
-    return txt[idx:], created
+    data["personal"] = txt[idx:] if idx != -1 else None
+    return data
+
+
+def emit_alias_block(aliases):
+    if not aliases:
+        return []
+    out = ["aliases:"]
+    for a in aliases:
+        out.append(f'  - "{a}"' if re.search(r'[:#\[\],&*?{}|<>=!%@`"/]', a) else f"  - {a}")
+    return out
+
+
+def update_graph():
+    """Rewrite graph.json color groups + filter, preserving all other settings."""
+    import json
+    path = os.path.join(ROOT, ".obsidian", "graph.json")
+    cfg = {}
+    if os.path.isfile(path):
+        try:
+            cfg = json.load(open(path, encoding="utf-8"))
+        except (OSError, ValueError):
+            cfg = {}
+    missing = [k for k, *_ in CATEGORIES if k not in PALETTE]
+    if missing:
+        print(f"WARNING: no graph color in PALETTE for: {missing}", file=sys.stderr)
+    cfg["search"] = GRAPH_SEARCH
+    cfg["showOrphans"] = False
+    cfg["colorGroups"] = [
+        {"query": f"tag:#domain/{key}", "color": {"a": 1, "rgb": PALETTE[key]}}
+        for key, *_ in CATEGORIES if key in PALETTE
+    ]
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(cfg, f, indent=2)
+        f.write("\n")
+    print(f"graph.json: wrote {len(cfg['colorGroups'])} color groups + filter "
+          f"(if Obsidian was running, quit it and re-run with --graph)")
+
+
+def prune(on_disk):
+    """Delete orphaned generated notes. Returns the list of removed paths."""
+    removed = []
+    keep = set(on_disk) | {"index", "README"}
+    for f in os.listdir(ROOT):
+        if not f.endswith(".md") or f.startswith(".") or f[:-3] in keep:
+            continue
+        p = os.path.join(ROOT, f)
+        try:
+            txt = open(p, encoding="utf-8").read()
+        except OSError:
+            continue
+        # only delete files that are clearly generated wrappers
+        if re.search(r"^source:\s*.+/SKILL\.md\s*$", txt, re.MULTILINE) or PERSONAL_MARKER in txt:
+            os.remove(p)
+            removed.append(f)
+    live_maps = {f"{k}.md" for k, *_ in CATEGORIES}
+    for f in os.listdir(MAPS_DIR):
+        if not f.endswith(".md") or f in live_maps:
+            continue
+        p = os.path.join(MAPS_DIR, f)
+        try:
+            txt = open(p, encoding="utf-8").read()
+        except OSError:
+            continue
+        if re.search(r"^\s*-\s*skill-map\s*$", txt, re.MULTILINE):  # generated map
+            os.remove(p)
+            removed.append(f"maps/{f}")
+    if removed:
+        print(f"PRUNED {len(removed)} orphan note(s): {', '.join(sorted(removed))}",
+              file=sys.stderr)
+    return removed
 
 
 def main():
     os.makedirs(MAPS_DIR, exist_ok=True)
+    if GRAPH:
+        update_graph()
     title_by_key = {k: t for k, t, _, _, _ in CATEGORIES}
     key_by_skill, assigned = {}, {}
     for key, title, scope, related, skills in CATEGORIES:
@@ -228,15 +394,26 @@ def main():
     for s in skills_sorted:
         key = key_by_skill.get(s, "uncategorized")
         dtitle = title_by_key.get(key, "Uncategorized")
-        notes_block, created = preserved_notes(s)
-        created = created or TODAY
+        ex = parse_existing(s) or {}
+        created = ex.get("created", TODAY)
+        status = ex.get("status", "untried")
+        rating = ex.get("rating")
+        aliases = ex.get("aliases")
+        if aliases is None or FORCE_ALIASES:  # key absent => first-time auto-generate
+            aliases = gen_aliases(s, full_desc[s])
+        notes_block = ex.get("personal")
         L = []
         L.append("---")
         L.append(f"title: {s}")
+        L += emit_alias_block(aliases)
         L.append("tags:")
         L.append("  - skill")
         if key != "uncategorized":
             L.append(f"  - domain/{key}")
+        L.append(f"domain: {key}")
+        L.append(f"status: {status}")
+        if rating is not None:
+            L.append(f"rating: {rating}")
         L.append(f"source: {s}/SKILL.md")
         L.append(f"created: {created}")
         L.append("---")
@@ -249,6 +426,7 @@ def main():
         nav = [f"**Source:** [{s}/SKILL.md]({s}/SKILL.md)"]
         if key != "uncategorized":
             nav.append(f"**Domain:** [{dtitle}](maps/{key}.md)")
+        nav.append("**Table:** [skills.base](skills.base)")
         nav.append("**Index:** [Skills Index](index.md)")
         L.append("  ·  ".join(nav))
         L.append("")
@@ -298,11 +476,14 @@ def main():
          f"{len(CATEGORIES)} domains. Each entry links to a per-skill note that wraps the "
          f"original `SKILL.md` and holds your personal notes.", "",
          "> [!tip] How to navigate",
-         "> - Browse a **domain map** below for grouped, cross-linked skills.",
-         "> - Jump to any skill via the **A–Z list** at the bottom.",
-         "> - Each skill note links to its source `SKILL.md` and to related skills.",
-         "> - Open Obsidian **Graph view** to see index, maps, and skills connect.", "",
-         "## Browse by domain", ""]
+         "> - **Find by name/synonym:** quick switcher (Cmd+O); skills carry aliases like `TDD`, `CDK`, `sklearn`.",
+         "> - **Browse a domain:** open a map below for grouped, cross-linked skills.",
+         "> - **Filter by attribute:** open [skills.base](skills.base) to sort/filter by domain, status, rating.",
+         "> - **Jump to any skill:** the **A–Z list** at the bottom.",
+         "> - **See connections:** Obsidian Graph view is color-grouped by domain.", "",
+         "## Quick access", "",
+         "- [Filterable table — skills.base](skills.base)  ·  sort & filter all skills by domain / status / rating",
+         "", "## Browse by domain", ""]
     for key, title, scope, related_keys, skills in CATEGORIES:
         live = sorted(s for s in skills if s in on_disk)
         I.append(f"### [{title}](maps/{key}.md)  ·  {len(live)} skills")
@@ -334,9 +515,11 @@ def main():
     with open(os.path.join(ROOT, "index.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(I))
 
+    pruned = prune(on_disk) if PRUNE else []
+
     edge_count = sum(len(v) for v in related.values()) // 2
     print(f"OK: {total} wrappers, {len(CATEGORIES)} maps, {edge_count} related-links, "
-          f"unsorted={len(unsorted)}")
+          f"unsorted={len(unsorted)}, pruned={len(pruned)}")
 
 
 if __name__ == "__main__":

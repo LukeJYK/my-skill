@@ -3,7 +3,7 @@ title: Skills Index
 tags:
   - moc
   - skill-index
-created: 2026-11-22
+created: 2026-11-24
 ---
 
 # Skills Index
@@ -11,10 +11,15 @@ created: 2026-11-22
 A navigable map of the **109 agent skills** in this vault, grouped into 12 domains. Each entry links to a per-skill note that wraps the original `SKILL.md` and holds your personal notes.
 
 > [!tip] How to navigate
-> - Browse a **domain map** below for grouped, cross-linked skills.
-> - Jump to any skill via the **A–Z list** at the bottom.
-> - Each skill note links to its source `SKILL.md` and to related skills.
-> - Open Obsidian **Graph view** to see index, maps, and skills connect.
+> - **Find by name/synonym:** quick switcher (Cmd+O); skills carry aliases like `TDD`, `CDK`, `sklearn`.
+> - **Browse a domain:** open a map below for grouped, cross-linked skills.
+> - **Filter by attribute:** open [skills.base](skills.base) to sort/filter by domain, status, rating.
+> - **Jump to any skill:** the **A–Z list** at the bottom.
+> - **See connections:** Obsidian Graph view is color-grouped by domain.
+
+## Quick access
+
+- [Filterable table — skills.base](skills.base)  ·  sort & filter all skills by domain / status / rating
 
 ## Browse by domain
 

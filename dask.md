@@ -3,6 +3,8 @@ title: dask
 tags:
   - skill
   - domain/data-science-compute
+domain: data-science-compute
+status: untried
 source: dask/SKILL.md
 created: 2026-11-22
 ---
@@ -12,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Scales pandas, NumPy, and custom Python research workflows beyond memory or across clusters with Dask. Covers DataFrames, Arrays, Bags, Futures, chunking, schedulers, and distributed diagnostics. Use for partitioned file processing, scientific array computation, or parallel tasks whose memory and dependency structure require Dask.
 
-**Source:** [dask/SKILL.md](dask/SKILL.md)  ·  **Domain:** [Data Science, Stats & Scientific Computing](maps/data-science-compute.md)  ·  **Index:** [Skills Index](index.md)
+**Source:** [dask/SKILL.md](dask/SKILL.md)  ·  **Domain:** [Data Science, Stats & Scientific Computing](maps/data-science-compute.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 
@@ -21,4 +23,3 @@ created: 2026-11-22
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 
 ## Notes
-

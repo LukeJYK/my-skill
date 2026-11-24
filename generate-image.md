@@ -3,6 +3,8 @@ title: generate-image
 tags:
   - skill
   - domain/documents-office
+domain: documents-office
+status: untried
 source: generate-image/SKILL.md
 created: 2026-11-22
 ---
@@ -12,7 +14,7 @@ created: 2026-11-22
 > [!info] What it does
 > Generates or edits images with AI models through the OpenRouter Image API (Gemini, Seedream, Recraft, GPT-Image, Riverflow). Use for photos, illustrations, artwork, concept art, visual assets, logos, and image editing or compositing from reference images. For flowcharts, circuits, pathways, and other technical diagrams, use the scientific-schematics skill instead.
 
-**Source:** [generate-image/SKILL.md](generate-image/SKILL.md)  ·  **Domain:** [Documents, Office & Media](maps/documents-office.md)  ·  **Index:** [Skills Index](index.md)
+**Source:** [generate-image/SKILL.md](generate-image/SKILL.md)  ·  **Domain:** [Documents, Office & Media](maps/documents-office.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 
@@ -21,4 +23,3 @@ created: 2026-11-22
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 
 ## Notes
-

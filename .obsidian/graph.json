@@ -6,7 +6,92 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "tag:#domain/ml-ai",
+      "color": {
+        "a": 1,
+        "rgb": 12578629
+      }
+    },
+    {
+      "query": "tag:#domain/data-science-compute",
+      "color": {
+        "a": 1,
+        "rgb": 16432852
+      }
+    },
+    {
+      "query": "tag:#domain/quantum-physics",
+      "color": {
+        "a": 1,
+        "rgb": 4626832
+      }
+    },
+    {
+      "query": "tag:#domain/research-writing",
+      "color": {
+        "a": 1,
+        "rgb": 14466815
+      }
+    },
+    {
+      "query": "tag:#domain/academic-pipelines",
+      "color": {
+        "a": 1,
+        "rgb": 10117924
+      }
+    },
+    {
+      "query": "tag:#domain/literature-discovery",
+      "color": {
+        "a": 1,
+        "rgb": 16775880
+      }
+    },
+    {
+      "query": "tag:#domain/documents-office",
+      "color": {
+        "a": 1,
+        "rgb": 8388608
+      }
+    },
+    {
+      "query": "tag:#domain/cloud-devops",
+      "color": {
+        "a": 1,
+        "rgb": 11206595
+      }
+    },
+    {
+      "query": "tag:#domain/software-engineering",
+      "color": {
+        "a": 1,
+        "rgb": 16739179
+      }
+    },
+    {
+      "query": "tag:#domain/agent-workflow",
+      "color": {
+        "a": 1,
+        "rgb": 3065014
+      }
+    },
+    {
+      "query": "tag:#domain/vault-meta",
+      "color": {
+        "a": 1,
+        "rgb": 8421376
+      }
+    },
+    {
+      "query": "tag:#domain/reasoning-ideation",
+      "color": {
+        "a": 1,
+        "rgb": 117
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +102,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.35241064426779506,
+  "scale": 0.3030045252427292,
   "close": true
 }

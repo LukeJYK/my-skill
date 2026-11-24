@@ -1,8 +1,12 @@
 ---
 title: scikit-learn
+aliases:
+  - sklearn
 tags:
   - skill
   - domain/ml-ai
+domain: ml-ai
+status: untried
 source: scikit-learn/SKILL.md
 created: 2026-11-22
 ---
@@ -12,7 +16,7 @@ created: 2026-11-22
 > [!info] What it does
 > Supports machine learning in Python with scikit-learn. Applies when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.
 
-**Source:** [scikit-learn/SKILL.md](scikit-learn/SKILL.md)  ·  **Domain:** [Machine Learning & AI](maps/ml-ai.md)  ·  **Index:** [Skills Index](index.md)
+**Source:** [scikit-learn/SKILL.md](scikit-learn/SKILL.md)  ·  **Domain:** [Machine Learning & AI](maps/ml-ai.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 
@@ -22,4 +26,3 @@ created: 2026-11-22
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 
 ## Notes
-

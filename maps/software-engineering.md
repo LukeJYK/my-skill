@@ -2,7 +2,7 @@
 title: Software Engineering Practices
 tags:
   - skill-map
-created: 2026-11-22
+created: 2026-11-24
 ---
 
 # Software Engineering Practices

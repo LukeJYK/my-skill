@@ -1,8 +1,12 @@
 ---
 title: transformers
+aliases:
+  - huggingface
 tags:
   - skill
   - domain/ml-ai
+domain: ml-ai
+status: untried
 source: transformers/SKILL.md
 created: 2026-11-22
 ---
@@ -12,7 +16,7 @@ created: 2026-11-22
 > [!info] What it does
 > Hugging Face Transformers for loading Hub models, running pipeline inference, text generation, and Trainer fine-tuning on NLP, vision, audio, and multimodal tasks. Applies when working with AutoModel, pipelines, tokenizers, generation configs, or TrainingArguments within Transformers.
 
-**Source:** [transformers/SKILL.md](transformers/SKILL.md)  ·  **Domain:** [Machine Learning & AI](maps/ml-ai.md)  ·  **Index:** [Skills Index](index.md)
+**Source:** [transformers/SKILL.md](transformers/SKILL.md)  ·  **Domain:** [Machine Learning & AI](maps/ml-ai.md)  ·  **Table:** [skills.base](skills.base)  ·  **Index:** [Skills Index](index.md)
 
 ## Related skills
 
@@ -21,4 +25,3 @@ created: 2026-11-22
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 
 ## Notes
-

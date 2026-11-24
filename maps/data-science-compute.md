@@ -2,7 +2,7 @@
 title: Data Science, Stats & Scientific Computing
 tags:
   - skill-map
-created: 2026-11-22
+created: 2026-11-24
 ---
 
 # Data Science, Stats & Scientific Computing
