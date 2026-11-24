@@ -16,7 +16,8 @@ Errors (exit 1):
 Warnings:
   - SKILL.md longer than 500 lines
   - ../ link to a file outside the skill (upstream shared file) that is missing
-  - no vault note <name>.md, or the note's `source:` does not point at the skill
+  - no vault note vault/notes/<domain>/<name>.md (or more than one), or the
+    note's `source:` does not point at the skill
   - metadata.last-reviewed older than --stale-days
 
 Standard library only, so it runs anywhere Python 3.8+ does.
@@ -167,10 +168,13 @@ def check_skill(d, lock_names, stale_days):
     if lock_names is not None and d.name not in lock_names:
         errors.append("not listed in .skill-lock.json")
 
-    note = REPO / f"{d.name}.md"
-    if not note.exists():
-        warns.append(f"no vault note {d.name}.md")
+    notes = sorted((REPO / "vault" / "notes").glob(f"*/{d.name}.md"))
+    if not notes:
+        warns.append(f"no vault note vault/notes/<domain>/{d.name}.md (run build-vault.py)")
+    elif len(notes) > 1:
+        warns.append(f"{len(notes)} vault notes for this skill (run build-vault.py --prune)")
     else:
+        note = notes[0]
         nfm, _ = parse_frontmatter(note.read_text(encoding="utf-8", errors="replace"))
         src = str((nfm or {}).get("source") or "")
         if src and src != f"skills/{d.name}/SKILL.md":

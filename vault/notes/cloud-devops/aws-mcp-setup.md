@@ -1,0 +1,25 @@
+---
+title: aws-mcp-setup
+tags:
+  - skill
+  - domain/cloud-devops
+domain: cloud-devops
+status: untried
+source: skills/aws-mcp-setup/SKILL.md
+created: 2026-11-22
+---
+
+# aws-mcp-setup
+
+> [!info] What it does
+> Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with uvx + credentials) and lightweight Documentation MCP (no auth required).
+
+**Source:** [aws-mcp-setup/SKILL.md](../../../skills/aws-mcp-setup/SKILL.md)  ·  **Domain:** [Cloud, Infra & MLOps](../../maps/cloud-devops.md)  ·  **Table:** [skills.base](../../skills.base)  ·  **Index:** [Skills Index](../../index.md)
+
+## Related skills
+
+_None auto-detected. Add your own links here, e.g. `[other-skill](../<domain>/other-skill.md)`._
+
+%% ---8<--- personal notes below are preserved on re-run ---8<--- %%
+
+## Notes
