@@ -1,5 +1,7 @@
 ---
 title: scientific-critical-thinking
+aliases:
+  - scientific critical thinking
 tags:
   - skill
   - domain/research-writing

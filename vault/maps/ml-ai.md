@@ -12,7 +12,7 @@ created: 2026-11-24
 
 [Back to Skill Index](../index.md)
 
-**Related maps:** [Data Science, Stats & Scientific Computing](data-science-compute.md) | [Cloud, Infra & MLOps](cloud-devops.md) | [Agents & Context Engineering](agent-workflow.md)
+**Related maps:** [Data Science, Stats & Scientific Computing](data-science-compute.md) | [Cloud, Infra & MLOps](cloud-devops.md)
 
 ## Skills (11)
 

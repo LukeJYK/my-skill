@@ -3,6 +3,7 @@ title: aws-agentic-ai
 aliases:
   - Bedrock
   - AgentCore
+  - aws agentic ai
 tags:
   - skill
   - domain/cloud-devops

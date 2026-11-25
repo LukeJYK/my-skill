@@ -1,5 +1,7 @@
 ---
 title: what-if-oracle
+aliases:
+  - what if oracle
 tags:
   - skill
   - domain/reasoning-ideation

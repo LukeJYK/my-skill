@@ -1338,6 +1338,79 @@
       "skillFolderHash": "4840d72e02cbf1ac3cedfa2d91949550c45f8b53",
       "installedAt": "2026-11-24T19:54:48.218Z",
       "updatedAt": "2026-11-24T19:54:48.218Z"
+    },
+    "gh-cli": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/trailofbits/skills.git",
+      "commit": "149d7b21f4067765b82e67029730b42d228ef4b4",
+      "skillPath": "plugins/gh-cli/skills/gh-cli/SKILL.md",
+      "skillFolderHash": "bf7eb1a256f183fba7875a0175bca298e95f8061",
+      "installedAt": "2026-11-24T20:23:29.243Z",
+      "updatedAt": "2026-11-24T20:23:29.243Z"
+    },
+    "devcontainer-setup": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/trailofbits/skills.git",
+      "commit": "149d7b21f4067765b82e67029730b42d228ef4b4",
+      "skillPath": "plugins/devcontainer-setup/skills/devcontainer-setup/SKILL.md",
+      "skillFolderHash": "4a2948dc493c5e5e0edcb4852422cba9a8e928b1",
+      "installedAt": "2026-11-24T20:23:31.095Z",
+      "updatedAt": "2026-11-24T20:23:31.095Z"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "skillFolderHash": "d79e2a5bb4df4a386c2adcdd9ab8709bba28c3f6",
+      "pluginName": "example-skills",
+      "installedAt": "2026-11-24T20:23:32.889Z",
+      "updatedAt": "2026-11-24T20:23:32.889Z"
+    },
+    "webapp-testing": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "skillPath": "skills/webapp-testing/SKILL.md",
+      "skillFolderHash": "5ffb7dc66b9fd4c25c3e400a4c00da99a349b714",
+      "pluginName": "example-skills",
+      "installedAt": "2026-11-24T20:23:34.498Z",
+      "updatedAt": "2026-11-24T20:23:34.498Z"
+    },
+    "mcp-builder": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "skillPath": "skills/mcp-builder/SKILL.md",
+      "skillFolderHash": "ea6e4d7bc108b44b3009129688049e23d801f0f3",
+      "pluginName": "example-skills",
+      "installedAt": "2026-11-24T20:23:36.079Z",
+      "updatedAt": "2026-11-24T20:23:36.079Z"
+    },
+    "playwright-best-practices": {
+      "source": "currents-dev/playwright-best-practices-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/currents-dev/playwright-best-practices-skill.git",
+      "commit": "0b75b5835a87de1fdd202ba965f3bc5a27738fdf",
+      "skillPath": "playwright-best-practices/SKILL.md",
+      "skillFolderHash": "65ed9f36bf8b264bbf825533120c72cfc0931571",
+      "installedAt": "2026-11-24T20:23:37.544Z",
+      "updatedAt": "2026-11-24T20:23:37.544Z"
+    },
+    "defuddle": {
+      "source": "obsidianmd/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obsidianmd/obsidian-skills.git",
+      "commit": "b110b2f8e9eb1f287892f937050dfd40af862cbb",
+      "skillPath": "plugins/obsidian/skills/defuddle/SKILL.md",
+      "skillFolderHash": "69e781a19e8807f5d037723f1f994cfbe19573ff",
+      "installedAt": "2026-11-25T02:34:27.891Z",
+      "updatedAt": "2026-11-25T02:34:27.891Z"
     }
   },
   "dismissed": {

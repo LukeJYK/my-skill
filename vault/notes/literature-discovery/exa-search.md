@@ -1,5 +1,7 @@
 ---
 title: exa-search
+aliases:
+  - exa search
 tags:
   - skill
   - domain/literature-discovery

@@ -1,5 +1,7 @@
 ---
 title: citation-management
+aliases:
+  - citation management
 tags:
   - skill
   - domain/research-writing

@@ -1,5 +1,7 @@
 ---
 title: generate-image
+aliases:
+  - generate image
 tags:
   - skill
   - domain/documents-office

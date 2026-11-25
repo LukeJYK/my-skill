@@ -1,5 +1,7 @@
 ---
 title: scientific-brainstorming
+aliases:
+  - scientific brainstorming
 tags:
   - skill
   - domain/reasoning-ideation
@@ -18,7 +20,7 @@ created: 2026-11-22
 
 ## Related skills
 
-- [brainstorming](../uncategorized/brainstorming.md) — You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a...
+- [brainstorming](../software-dev/brainstorming.md) — You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a...
 
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 

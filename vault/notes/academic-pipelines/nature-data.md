@@ -1,5 +1,7 @@
 ---
 title: nature-data
+aliases:
+  - nature data
 tags:
   - skill
   - domain/academic-pipelines

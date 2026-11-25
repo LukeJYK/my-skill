@@ -1,5 +1,7 @@
 ---
 title: idea-refine
+aliases:
+  - idea refine
 tags:
   - skill
   - domain/reasoning-ideation

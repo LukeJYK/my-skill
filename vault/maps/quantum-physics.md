@@ -8,7 +8,7 @@ created: 2026-11-24
 # Quantum, Physics & Materials
 
 > [!abstract] Scope
-> Quantum computing frameworks, open quantum systems, astronomy, fluid dynamics, materials science, and battery modeling.
+> Quantum computing frameworks, open quantum systems, astronomy, fluid dynamics, and materials science.
 
 [Back to Skill Index](../index.md)
 

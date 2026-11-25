@@ -1,5 +1,7 @@
 ---
 title: research-lookup
+aliases:
+  - research lookup
 tags:
   - skill
   - domain/literature-discovery

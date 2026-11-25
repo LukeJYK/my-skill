@@ -1,5 +1,7 @@
 ---
 title: zarr-python
+aliases:
+  - zarr python
 tags:
   - skill
   - domain/data-science-compute

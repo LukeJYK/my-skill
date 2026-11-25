@@ -3,6 +3,7 @@ title: aws-serverless-eda
 aliases:
   - Lambda
   - EventBridge
+  - aws serverless eda
 tags:
   - skill
   - domain/cloud-devops

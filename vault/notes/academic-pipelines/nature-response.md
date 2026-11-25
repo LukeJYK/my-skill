@@ -1,5 +1,7 @@
 ---
 title: nature-response
+aliases:
+  - nature response
 tags:
   - skill
   - domain/academic-pipelines

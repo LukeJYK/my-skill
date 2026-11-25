@@ -1,5 +1,7 @@
 ---
 title: intro-drafter
+aliases:
+  - intro drafter
 tags:
   - skill
   - domain/research-writing

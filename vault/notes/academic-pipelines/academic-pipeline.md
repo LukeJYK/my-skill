@@ -1,5 +1,7 @@
 ---
 title: academic-pipeline
+aliases:
+  - academic pipeline
 tags:
   - skill
   - domain/academic-pipelines

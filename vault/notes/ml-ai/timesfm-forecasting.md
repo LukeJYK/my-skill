@@ -1,5 +1,7 @@
 ---
 title: timesfm-forecasting
+aliases:
+  - timesfm forecasting
 tags:
   - skill
   - domain/ml-ai

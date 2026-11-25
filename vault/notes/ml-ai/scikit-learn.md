@@ -2,6 +2,7 @@
 title: scikit-learn
 aliases:
   - sklearn
+  - scikit learn
 tags:
   - skill
   - domain/ml-ai

@@ -1,5 +1,7 @@
 ---
 title: parallel-web
+aliases:
+  - parallel web
 tags:
   - skill
   - domain/literature-discovery

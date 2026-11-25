@@ -64,17 +64,10 @@
       }
     },
     {
-      "query": "tag:#domain/software-engineering",
+      "query": "tag:#domain/software-dev",
       "color": {
         "a": 1,
-        "rgb": 16739179
-      }
-    },
-    {
-      "query": "tag:#domain/agent-workflow",
-      "color": {
-        "a": 1,
-        "rgb": 3065014
+        "rgb": 1752220
       }
     },
     {
@@ -90,6 +83,20 @@
         "a": 1,
         "rgb": 117
       }
+    },
+    {
+      "query": "tag:#domain/web-automation-frontend",
+      "color": {
+        "a": 1,
+        "rgb": 5832703
+      }
+    },
+    {
+      "query": "tag:#domain/security-auditing",
+      "color": {
+        "a": 1,
+        "rgb": 13382451
+      }
     }
   ],
   "collapse-display": true,
@@ -102,6 +109,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.8156351920615451,
+  "scale": 0.5276427201510843,
   "close": true
 }

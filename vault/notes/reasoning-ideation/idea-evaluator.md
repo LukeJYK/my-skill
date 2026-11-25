@@ -1,5 +1,7 @@
 ---
 title: idea-evaluator
+aliases:
+  - idea evaluator
 tags:
   - skill
   - domain/reasoning-ideation

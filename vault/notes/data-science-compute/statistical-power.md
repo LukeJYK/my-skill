@@ -2,6 +2,7 @@
 title: statistical-power
 aliases:
   - sample size
+  - statistical power
 tags:
   - skill
   - domain/data-science-compute

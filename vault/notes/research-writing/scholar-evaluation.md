@@ -1,5 +1,7 @@
 ---
 title: scholar-evaluation
+aliases:
+  - scholar evaluation
 tags:
   - skill
   - domain/research-writing

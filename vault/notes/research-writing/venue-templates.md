@@ -1,5 +1,7 @@
 ---
 title: venue-templates
+aliases:
+  - venue templates
 tags:
   - skill
   - domain/research-writing

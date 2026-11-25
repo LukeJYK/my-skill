@@ -14,8 +14,9 @@ created: 2026-11-24
 
 **Related maps:** [Machine Learning & AI](ml-ai.md) | [Quantum, Physics & Materials](quantum-physics.md) | [Scientific Writing, Figures & Publishing](research-writing.md)
 
-## Skills (19)
+## Skills (20)
 
+- [adjusttext](../notes/data-science-compute/adjusttext.md) — Use the Python adjustText package to automatically move matplotlib text labels so they do not overlap each other, points, or other artists
 - [dask](../notes/data-science-compute/dask.md) — Scales pandas, NumPy, and custom Python research workflows beyond memory or across clusters with Dask
 - [exploratory-data-analysis](../notes/data-science-compute/exploratory-data-analysis.md) — Performs bounded, local exploratory analysis of explicitly supported scientific files
 - [geomaster](../notes/data-science-compute/geomaster.md) — Supports geospatial research workflows for remote sensing, vector and raster GIS, spatial statistics, terrain and network analysis, and machine learning for Earth observation

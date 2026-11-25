@@ -1,5 +1,7 @@
 ---
 title: nature-writing
+aliases:
+  - nature writing
 tags:
   - skill
   - domain/academic-pipelines

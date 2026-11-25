@@ -3,6 +3,7 @@ title: consciousness-council
 aliases:
   - panel
   - council
+  - consciousness council
 tags:
   - skill
   - domain/reasoning-ideation

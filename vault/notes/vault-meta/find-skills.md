@@ -1,5 +1,7 @@
 ---
 title: find-skills
+aliases:
+  - find skills
 tags:
   - skill
   - domain/vault-meta

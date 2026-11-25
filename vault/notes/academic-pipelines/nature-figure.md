@@ -1,5 +1,7 @@
 ---
 title: nature-figure
+aliases:
+  - nature figure
 tags:
   - skill
   - domain/academic-pipelines

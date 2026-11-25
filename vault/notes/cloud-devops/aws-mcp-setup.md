@@ -1,5 +1,7 @@
 ---
 title: aws-mcp-setup
+aliases:
+  - aws mcp setup
 tags:
   - skill
   - domain/cloud-devops

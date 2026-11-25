@@ -1,5 +1,7 @@
 ---
 title: vibe-research-workflow
+aliases:
+  - vibe research workflow
 tags:
   - skill
   - domain/reasoning-ideation

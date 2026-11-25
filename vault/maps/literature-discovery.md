@@ -14,8 +14,9 @@ created: 2026-11-24
 
 **Related maps:** [Scientific Writing, Figures & Publishing](research-writing.md) | [Academic Paper & Nature Pipelines](academic-pipelines.md) | [Documents, Office & Media](documents-office.md)
 
-## Skills (5)
+## Skills (6)
 
+- [defuddle](../notes/literature-discovery/defuddle.md) — Extract clean Markdown from HTML pages with Defuddle CLI
 - [exa-search](../notes/literature-discovery/exa-search.md) — Searches scientific and technical web content with Exa and extracts page or PDF text from URLs in batches
 - [literature-review](../notes/literature-discovery/literature-review.md) — Conducts systematic, scoping, and narrative literature reviews using PubMed, arXiv, bioRxiv, Semantic Scholar, and other appropriate sources
 - [paper-lookup](../notes/literature-discovery/paper-lookup.md) — Searches 18 scholarly APIs for papers, preprints, citations, open-access full text, repository records, and journal OA status, and returns results with reproducible provenance

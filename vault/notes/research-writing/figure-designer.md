@@ -1,5 +1,7 @@
 ---
 title: figure-designer
+aliases:
+  - figure designer
 tags:
   - skill
   - domain/research-writing

@@ -2,6 +2,7 @@
 title: uncertainty-and-units
 aliases:
   - pint
+  - uncertainty and units
 tags:
   - skill
   - domain/data-science-compute

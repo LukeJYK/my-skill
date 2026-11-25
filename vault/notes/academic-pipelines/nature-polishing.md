@@ -1,5 +1,7 @@
 ---
 title: nature-polishing
+aliases:
+  - nature polishing
 tags:
   - skill
   - domain/academic-pipelines

@@ -1,5 +1,7 @@
 ---
 title: nature-reviewer
+aliases:
+  - nature reviewer
 tags:
   - skill
   - domain/academic-pipelines

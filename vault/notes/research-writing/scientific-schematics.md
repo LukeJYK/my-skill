@@ -1,5 +1,7 @@
 ---
 title: scientific-schematics
+aliases:
+  - scientific schematics
 tags:
   - skill
   - domain/research-writing

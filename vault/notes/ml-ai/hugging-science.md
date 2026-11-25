@@ -1,5 +1,7 @@
 ---
 title: hugging-science
+aliases:
+  - hugging science
 tags:
   - skill
   - domain/ml-ai

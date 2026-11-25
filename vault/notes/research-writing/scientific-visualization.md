@@ -1,5 +1,7 @@
 ---
 title: scientific-visualization
+aliases:
+  - scientific visualization
 tags:
   - skill
   - domain/research-writing
@@ -18,7 +20,7 @@ created: 2026-11-22
 
 ## Related skills
 
-- [adjusttext](../uncategorized/adjusttext.md) — Use the Python adjustText package to automatically move matplotlib text labels so they do not overlap each other, points, or other artists
+- [adjusttext](../data-science-compute/adjusttext.md) — Use the Python adjustText package to automatically move matplotlib text labels so they do not overlap each other, points, or other artists
 - [matplotlib](../data-science-compute/matplotlib.md) — Creates and customizes scientific plots with Matplotlib
 - [seaborn](../data-science-compute/seaborn.md) — Creates Seaborn statistical visualizations with pandas integration for distributions, relationships, categorical comparisons, regression displays, pair plots, and heatmaps
 

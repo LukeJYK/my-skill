@@ -1,5 +1,7 @@
 ---
 title: statistical-analysis
+aliases:
+  - statistical analysis
 tags:
   - skill
   - domain/data-science-compute

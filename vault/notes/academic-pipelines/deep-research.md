@@ -1,5 +1,7 @@
 ---
 title: deep-research
+aliases:
+  - deep research
 tags:
   - skill
   - domain/academic-pipelines

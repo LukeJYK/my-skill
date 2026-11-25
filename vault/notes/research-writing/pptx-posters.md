@@ -1,5 +1,7 @@
 ---
 title: pptx-posters
+aliases:
+  - pptx posters
 tags:
   - skill
   - domain/research-writing

@@ -1,5 +1,7 @@
 ---
 title: paper-lookup
+aliases:
+  - paper lookup
 tags:
   - skill
   - domain/literature-discovery

@@ -2,6 +2,7 @@
 title: hf-cli
 aliases:
   - huggingface
+  - hf cli
 tags:
   - skill
   - domain/cloud-devops

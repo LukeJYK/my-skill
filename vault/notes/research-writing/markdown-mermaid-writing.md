@@ -1,5 +1,7 @@
 ---
 title: markdown-mermaid-writing
+aliases:
+  - markdown mermaid writing
 tags:
   - skill
   - domain/research-writing

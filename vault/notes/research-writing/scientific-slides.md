@@ -1,5 +1,7 @@
 ---
 title: scientific-slides
+aliases:
+  - scientific slides
 tags:
   - skill
   - domain/research-writing

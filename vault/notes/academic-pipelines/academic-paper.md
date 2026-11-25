@@ -1,5 +1,7 @@
 ---
 title: academic-paper
+aliases:
+  - academic paper
 tags:
   - skill
   - domain/academic-pipelines

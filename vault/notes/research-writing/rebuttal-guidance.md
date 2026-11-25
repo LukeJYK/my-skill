@@ -3,6 +3,7 @@ title: rebuttal-guidance
 aliases:
   - rebuttal
   - response to reviewers
+  - rebuttal guidance
 tags:
   - skill
   - domain/research-writing

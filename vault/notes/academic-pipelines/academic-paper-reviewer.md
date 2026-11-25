@@ -1,5 +1,7 @@
 ---
 title: academic-paper-reviewer
+aliases:
+  - academic paper reviewer
 tags:
   - skill
   - domain/academic-pipelines

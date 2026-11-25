@@ -3,9 +3,9 @@ title: stable-baselines3
 aliases:
   - SB3
   - RL
+  - stable baselines3
   - PPO
   - SAC
-  - DQN
 tags:
   - skill
   - domain/ml-ai

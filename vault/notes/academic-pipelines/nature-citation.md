@@ -1,5 +1,7 @@
 ---
 title: nature-citation
+aliases:
+  - nature citation
 tags:
   - skill
   - domain/academic-pipelines

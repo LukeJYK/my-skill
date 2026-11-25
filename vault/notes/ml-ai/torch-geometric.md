@@ -1,11 +1,11 @@
 ---
 title: torch-geometric
 aliases:
+  - torch geometric
   - PyG
   - GCN
   - GAT
   - GraphSAGE
-  - GIN
 tags:
   - skill
   - domain/ml-ai

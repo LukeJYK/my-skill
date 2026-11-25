@@ -1,5 +1,7 @@
 ---
 title: latex-posters
+aliases:
+  - latex posters
 tags:
   - skill
   - domain/research-writing

@@ -1,5 +1,7 @@
 ---
 title: pre-submission-reviewer
+aliases:
+  - pre submission reviewer
 tags:
   - skill
   - domain/research-writing

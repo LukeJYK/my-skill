@@ -1,5 +1,7 @@
 ---
 title: aws-cost-operations
+aliases:
+  - aws cost operations
 tags:
   - skill
   - domain/cloud-devops

@@ -2,6 +2,7 @@
 title: literature-review
 aliases:
   - systematic review
+  - literature review
 tags:
   - skill
   - domain/literature-discovery

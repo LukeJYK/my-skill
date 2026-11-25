@@ -1,5 +1,7 @@
 ---
 title: get-available-resources
+aliases:
+  - get available resources
 tags:
   - skill
   - domain/vault-meta

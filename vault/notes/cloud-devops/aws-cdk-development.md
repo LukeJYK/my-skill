@@ -2,6 +2,7 @@
 title: aws-cdk-development
 aliases:
   - CDK
+  - aws cdk development
 tags:
   - skill
   - domain/cloud-devops

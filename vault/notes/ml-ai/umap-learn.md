@@ -2,6 +2,7 @@
 title: umap-learn
 aliases:
   - UMAP
+  - umap learn
 tags:
   - skill
   - domain/ml-ai

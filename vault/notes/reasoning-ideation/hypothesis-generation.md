@@ -1,5 +1,7 @@
 ---
 title: hypothesis-generation
+aliases:
+  - hypothesis generation
 tags:
   - skill
   - domain/reasoning-ideation

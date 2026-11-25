@@ -1,5 +1,7 @@
 ---
 title: nature-academic-search
+aliases:
+  - nature academic search
 tags:
   - skill
   - domain/academic-pipelines

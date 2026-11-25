@@ -1,5 +1,7 @@
 ---
 title: research-grants
+aliases:
+  - research grants
 tags:
   - skill
   - domain/research-writing

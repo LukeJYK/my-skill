@@ -1,5 +1,7 @@
 ---
 title: exploratory-data-analysis
+aliases:
+  - exploratory data analysis
 tags:
   - skill
   - domain/data-science-compute

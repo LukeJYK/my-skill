@@ -2,6 +2,7 @@
 title: pytorch-lightning
 aliases:
   - PyTorch
+  - pytorch lightning
 tags:
   - skill
   - domain/ml-ai

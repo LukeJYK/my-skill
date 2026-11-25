@@ -1,5 +1,7 @@
 ---
 title: nature-reader
+aliases:
+  - nature reader
 tags:
   - skill
   - domain/academic-pipelines

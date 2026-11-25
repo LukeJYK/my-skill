@@ -1,5 +1,7 @@
 ---
 title: scientific-writing
+aliases:
+  - scientific writing
 tags:
   - skill
   - domain/research-writing

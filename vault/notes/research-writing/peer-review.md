@@ -1,5 +1,7 @@
 ---
 title: peer-review
+aliases:
+  - peer review
 tags:
   - skill
   - domain/research-writing

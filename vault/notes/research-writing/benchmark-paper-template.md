@@ -1,5 +1,7 @@
 ---
 title: benchmark-paper-template
+aliases:
+  - benchmark paper template
 tags:
   - skill
   - domain/research-writing

@@ -1,5 +1,7 @@
 ---
 title: nature-paper2ppt
+aliases:
+  - nature paper2ppt
 tags:
   - skill
   - domain/academic-pipelines

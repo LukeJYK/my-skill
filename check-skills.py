@@ -170,9 +170,9 @@ def check_skill(d, lock_names, stale_days):
 
     notes = sorted((REPO / "vault" / "notes").glob(f"*/{d.name}.md"))
     if not notes:
-        warns.append(f"no vault note vault/notes/<domain>/{d.name}.md (run build-vault.py)")
+        warns.append(f"no vault note vault/notes/<domain>/{d.name}.md (run .skill-vault/build-vault.py)")
     elif len(notes) > 1:
-        warns.append(f"{len(notes)} vault notes for this skill (run build-vault.py --prune)")
+        warns.append(f"{len(notes)} vault notes for this skill (run .skill-vault/build-vault.py --prune)")
     else:
         note = notes[0]
         nfm, _ = parse_frontmatter(note.read_text(encoding="utf-8", errors="replace"))
