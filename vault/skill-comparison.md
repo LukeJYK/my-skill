@@ -9,8 +9,8 @@ tags: [skills, inventory]
 
 对比对象：
 - **参考表**：上游 vault 的 `build.py`，22 个领域，`CATEGORIES` 里共 417 个技能
-- **已安装**：`skills/`，共 151 个
-- **我的分类**：[`.skill-vault/build-vault.py`](../.skill-vault/build-vault.py)，13 个领域：去掉了参考表的 8 个生物领域和 analytics-engineering（只装了 1 个，`observability-and-instrumentation` 并入 software-dev）
+- **已安装**：`skills/`，共 657 个
+- **我的分类**：[`.skill-vault/build-vault.py`](../.skill-vault/build-vault.py)，14 个领域：去掉了参考表的 8 个生物领域和 analytics-engineering（只装了 1 个，`observability-and-instrumentation` 并入 software-dev），新增 Scientific Expert Profiles
 
 上一版（2026-11-21，对比 `LukeJYK/skillset` 的 264 个）在 git 历史里。
 
@@ -20,7 +20,8 @@ tags: [skills, inventory]
 |---|---|
 | 参考表 | 417 |
 | 已安装（在参考表中） | 145 |
-| 已安装但不在参考表中 | 6 |
+| 已安装但不在参考表中：自己加的 | 8 |
+| 已安装但不在参考表中：K-Dense 专家 profile | 504 |
 | 未安装 | 272 |
 | └ 仍在 `CATEGORIES` 里（待装清单） | 100 |
 | └ 已从 `CATEGORIES` 移除：analytics-engineering | 16 |
@@ -47,13 +48,14 @@ tags: [skills, inventory]
 | Academic Paper & Nature Pipelines | 14 | 14 | 0 |  |
 | Literature Search & Knowledge Discovery | 14 | 6 | 8 |  |
 | Documents, Office & Media | 11 | 6 | 5 |  |
-| Cloud, Infra & MLOps | 15 | 11 | 4 |  |
+| Cloud, Infra & MLOps | 15 | 11 | 4 | 另有本地新增 `docker-expert`, `kubernetes-specialist` |
 | Software Development & Engineering | 35 | 29 | 6 | 另有本地新增 `constraint-driven-development`, `pi-agent`；另从 analytics-engineering 移入 `observability-and-instrumentation` |
 | Vault, Skills & Workflow Meta | 13 | 5 | 8 | 去掉了 `bio-orchestrator` |
 | Reasoning, Ideation & Decision | 10 | 9 | 1 |  |
 | Web Automation, Frontend & Design | 26 | 7 | 19 |  |
 | Analytics Engineering & LLM Operations | 17 | 1 | 16 | 已从 `CATEGORIES` 移除；`observability-and-instrumentation` 并入 software-dev |
 | Security & Auditing | 36 | 5 | 31 |  |
+| [Scientific Expert Profiles](maps/scientific-expert-profiles.md) | — | 504 | — | 不在参考表；按 SKILL.md metadata 自动归类 |
 
 ## 安装建议
 
@@ -69,6 +71,7 @@ tags: [skills, inventory]
 - **已移除**：dbt 和 LLM 可观测性那 16 个连同 analytics-engineering 领域一起删了，以后要装得先加回 `CATEGORIES`。
 - **不装**：`paper-2-web`。K-Dense 在 2026-04-02 删了它，skills.sh 上只剩第三方副本。要用的话，从 K-Dense 删除前的提交 `c61a6a2` 拿官方最后一版放进 `skills/paper-2-web/`，当本地技能。
 - 其余等真遇到对应任务再装，安装命令见 [README](../README.md)。
+- **K-Dense 专家 profile**：504 个已导入（见下文）。它们的名字和描述每次会话都会加载，约 4.8 万 token；不想要了，删掉 `skills/` 里带 `scientific-agents-profile: true` 的文件夹，再跑 `build-vault.py --prune`。
 
 ## ❌ 未安装：仍在 CATEGORIES 里
 
@@ -275,9 +278,17 @@ tags: [skills, inventory]
 
 ## ➕ 已安装但不在参考表中
 
+### K-Dense 专家 profile（504）
+
+来自 `K-Dense-AI/scientific-agents`（MIT），pin 在 commit `896ed6e`（2026-06-04），由 [`.skill-vault/import-scientific-agents.py`](../.skill-vault/import-scientific-agents.py) 导入：503 个职业专家 profile，加分发技能 [scientific-agents](notes/scientific-expert-profiles/scientific-agents.md)。全部列在 [Scientific Expert Profiles](maps/scientific-expert-profiles.md)。上游最新版比 pin 新 16 个提交，改过 216 个 profile；要更新就 checkout 新版、改 `PINNED_COMMIT` 后重跑导入。
+
+### 自己加的（8）
+
 | Skill | 领域 | 描述 |
 |---|---|---|
 | [constraint-driven-development](notes/software-dev/constraint-driven-development.md) | Software Development & Engineering | Establishes a project's quality bar as a written contract and stops agents quietly lowering it |
+| [docker-expert](notes/cloud-devops/docker-expert.md) | Cloud, Infra & MLOps | You are an advanced Docker containerization expert with comprehensive, practical knowledge of container optimization, security hardening, multi-stage builds, orchestration patterns... |
+| [kubernetes-specialist](notes/cloud-devops/kubernetes-specialist.md) | Cloud, Infra & MLOps | Use when deploying or managing Kubernetes workloads |
 | [pi-agent](notes/software-dev/pi-agent.md) | Software Development & Engineering | Builds with and operates Pi, the minimal terminal coding harness |
 | [pybamm](notes/quantum-physics/pybamm.md) | Quantum, Physics & Materials | Simulates lithium-ion battery charge, discharge and rest experiments with PyBaMM, records parameter-set provenance, checks mesh and solver sensitivity, and compares predicted voltage... |
 | [rebuttal-guidance](notes/research-writing/rebuttal-guidance.md) | Scientific Writing, Figures & Publishing | Provides actionable peer-review rebuttal guidance (not full rebuttal prose) using conditional persuasion P(Z\|X,Y): match reviewer mindset X, recommend strategy Y, optionally ground in... |

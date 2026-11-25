@@ -18,7 +18,7 @@ created: 2026-11-22
 
 ## Related skills
 
-_None auto-detected. Add your own links here, e.g. `[other-skill](../<domain>/other-skill.md)`._
+- [operations-researcher](../scientific-expert-profiles/operations-researcher.md) — Expert-thinking profile for Operations Researcher (optimization modeling / stochastic & robust programming / discrete-event simulation / VRP & scheduling / production solve ops...
 
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 

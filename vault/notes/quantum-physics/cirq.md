@@ -20,6 +20,7 @@ created: 2026-11-22
 
 - [pennylane](pennylane.md) — Builds and differentiates PennyLane quantum circuits, hybrid PyTorch or JAX models, molecular VQE and QAOA workflows
 - [qiskit](qiskit.md) — Builds, simulates, transpiles, and executes quantum circuits with Qiskit and IBM Quantum Runtime
+- [quantum-computing-scientist](../scientific-expert-profiles/quantum-computing-scientist.md) — Expert-thinking profile for Quantum Computing Scientist (experimental / computational / NISQ hardware & fault tolerance): Reasons from qubits as noisy open systems through T1/T2, gate...
 - [qutip](qutip.md) — Simulate and audit closed and open quantum-system models with QuTiP 5, including deterministic, trajectory, steady-state, spectral, and phase-space workflows
 
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%

@@ -20,6 +20,7 @@ created: 2026-11-22
 
 - [cirq](cirq.md) — Google quantum computing framework. Use when targeting Google Quantum AI hardware, designing noise-aware circuits, or running quantum characterization experiments
 - [pennylane](pennylane.md) — Builds and differentiates PennyLane quantum circuits, hybrid PyTorch or JAX models, molecular VQE and QAOA workflows
+- [quantum-computing-scientist](../scientific-expert-profiles/quantum-computing-scientist.md) — Expert-thinking profile for Quantum Computing Scientist (experimental / computational / NISQ hardware & fault tolerance): Reasons from qubits as noisy open systems through T1/T2, gate...
 
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 

@@ -9,6 +9,10 @@ Generates, for every skills/<skill>/ folder that contains a SKILL.md:
   - vault/maps/<domain>.md  one map (MOC) note per domain, linking to wrappers
   - vault/index.md          master index linking to maps + every wrapper (A-Z)
 
+Skills not listed in CATEGORIES are auto-filed by a frontmatter flag (see
+AUTO_DOMAINS): the ~500 profiles from .skill-vault/import-scientific-agents.py
+carry `scientific-agents-profile: true` and land in Scientific Expert Profiles.
+
 All links are true relative paths, so they resolve in Obsidian (vault root =
 repo root) and in any plain markdown renderer, GitHub's file view included.
 The frontmatter `source:` stays vault-root relative (skills/<skill>/SKILL.md)
@@ -72,11 +76,14 @@ PALETTE = {
     "literature-discovery": 0xFFFAC8, "documents-office": 0x800000,
     "cloud-devops": 0xAAFFC3, "software-dev": 0x1ABC9C, "vault-meta": 0x808000,
     "reasoning-ideation": 0x000075, "web-automation-frontend": 0x58FFFF,
-    "security-auditing": 0xCC3333,
+    "security-auditing": 0xCC3333, "scientific-expert-profiles": 0x4363D8,
 }
 # graph shows only generated notes (hides the ~870 untagged files inside skill folders)
 GRAPH_SEARCH = "tag:#skill OR tag:#skill-map OR tag:#moc"
 PERSONAL_MARKER = "%% ---8<--- personal notes below are preserved on re-run ---8<--- %%"
+# skill ids that are also ordinary words: related-links match only these spellings,
+# so "airfoil polars" or "experimental modal" in a description don't link to them
+CASE_SENSITIVE_NAMES = {"polars": "Polars", "modal": "Modal"}
 
 # acronyms too generic to be useful aliases (auto-extracted from descriptions)
 STOP = {"API", "CLI", "ML", "AI", "QC", "DNA", "RNA", "GPU", "CPU", "PDF", "CSV",
@@ -95,6 +102,8 @@ SYNONYMS = {
     "security-and-hardening": ["OWASP"], "performance-optimization": ["profiling"],
     # cloud / ML
     "aws-cdk-development": ["CDK"], "aws-serverless-eda": ["Lambda", "EventBridge"],
+    "docker-expert": ["Dockerfile", "Docker Compose"],
+    "kubernetes-specialist": ["K8s", "kubectl", "Helm"],
     "aws-agentic-ai": ["Bedrock", "AgentCore"], "hf-cli": ["huggingface"],
     "transformers": ["huggingface"], "optimize-for-gpu": ["CUDA", "cuDF"],
     "scikit-learn": ["sklearn"], "pytorch-lightning": ["PyTorch"],
@@ -183,12 +192,14 @@ CATEGORIES = [
       "market-research-reports", "doc-coauthoring", "internal-comms"]),
 
     ("cloud-devops", "Cloud, Infra & MLOps",
-     "AWS architecture and operations, serverless GPU compute, developer infrastructure, the Hugging Face CLI, and workflow pipelines.",
+     "AWS architecture and operations, serverless GPU compute, containers and Kubernetes, developer infrastructure, the Hugging Face CLI, and workflow pipelines.",
      ["ml-ai", "vault-meta", "security-auditing", "software-dev"],
      ["aws-agentic-ai", "aws-cdk-development", "aws-cost-operations", "aws-mcp-setup",
       "aws-serverless-eda", "modal", "hf-cli", "nextflow", "snakemake-workflow-engine",
       "e2b-sandbox", "devcontainer-setup", "modern-python", "conda-bioconda",
-      "ci-cd-and-automation", "shipping-and-launch"]),
+      "ci-cd-and-automation", "shipping-and-launch",
+      # local additions
+      "docker-expert", "kubernetes-specialist"]),
 
     ("software-dev", "Software Development & Engineering",
      "General software-engineering methodology and tooling: TDD, debugging, code review, planning, git worktrees, source-grounded implementation, observability, plus core app primitives (pytest, Docker, FastAPI, CI).",
@@ -245,7 +256,33 @@ CATEGORIES = [
       "agentic-actions-auditor", "insecure-defaults", "sharp-edges", "variant-analysis",
       "zeroize-audit", "fp-check", "guidelines-advisor", "entry-point-analyzer",
       "token-integration-analyzer", "spec-to-code-compliance", "security-and-hardening"]),
+
+    # filled automatically from SKILL.md metadata (see AUTO_DOMAINS); list only overrides here
+    ("scientific-expert-profiles", "Scientific Expert Profiles",
+     "Expert-thinking profiles imported from K-Dense-AI/scientific-agents: how senior practitioners across ~500 scientific and engineering professions frame problems, choose methods, and report uncertainty. Start from the scientific-agents dispatcher.",
+     ["reasoning-ideation", "research-writing", "data-science-compute", "quantum-physics", "ml-ai"],
+     []),
 ]
+
+# Skills that CATEGORIES does not list are filed under a domain when their SKILL.md
+# frontmatter carries one of these flags (normally inside `metadata:`), so bulk
+# imports don't need hundreds of names above. Explicit CATEGORIES entries win.
+AUTO_DOMAINS = {"scientific-agents-profile": "scientific-expert-profiles"}
+
+
+def auto_domain(skill):
+    try:
+        text = open(os.path.join(SKILLS_DIR, skill, "SKILL.md"), encoding="utf-8").read()
+    except OSError:
+        return None
+    m = re.match(r"^---\s*\n(.*?)\n---\s*\n", text, re.DOTALL)
+    if not m:
+        return None
+    for flag, key in AUTO_DOMAINS.items():
+        if re.search(rf"^\s*{re.escape(flag)}:\s*(true|yes)\s*$", m.group(1),
+                     re.MULTILINE | re.IGNORECASE):
+            return key
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -327,8 +364,11 @@ def discover_skills():
 
 def build_related(skills, full_desc):
     """Undirected related-graph mined from cross-references in descriptions."""
-    patterns = {s: re.compile(r"(?<![\w-])" + re.escape(s) + r"(?![\w-])", re.IGNORECASE)
-                for s in skills}
+    def pattern(s):
+        if s in CASE_SENSITIVE_NAMES:  # ordinary word: match only the library spelling
+            return re.compile(r"(?<![\w-])" + re.escape(CASE_SENSITIVE_NAMES[s]) + r"(?![\w-])")
+        return re.compile(r"(?<![\w-])" + re.escape(s) + r"(?![\w-])", re.IGNORECASE)
+    patterns = {s: pattern(s) for s in skills}
     edges = {s: set() for s in skills}
     for s in skills:
         d = full_desc.get(s) or ""
@@ -472,6 +512,13 @@ def main():
             key_by_skill[s] = key
 
     on_disk = discover_skills()
+    members = {key: list(skills) for key, _, _, _, skills in CATEGORIES}
+    for s in sorted(on_disk - set(assigned)):
+        key = auto_domain(s)
+        if key:
+            assigned[s] = key
+            key_by_skill[s] = key
+            members[key].append(s)
     unsorted = sorted(on_disk - set(assigned))
     if unsorted:
         print(f"WARNING: not categorized: {unsorted}", file=sys.stderr)
@@ -557,7 +604,7 @@ def main():
 
     # ---- map notes ---------------------------------------------------------
     for key, title, scope, related_keys, skills in CATEGORIES:
-        live = sorted(s for s in skills if s in on_disk)
+        live = sorted(s for s in members[key] if s in on_disk)
         L = ["---", f"title: {title}", "tags:", "  - skill-map", f"created: {TODAY}", "---", "",
              f"# {title}", "", "> [!abstract] Scope", f"> {scope}", "",
              "[Back to Skill Index](../index.md)", ""]
@@ -590,7 +637,7 @@ def main():
          "- [Filterable table — skills.base](skills.base)  ·  sort & filter all skills by domain / status / rating",
          "", "## Browse by domain", ""]
     for key, title, scope, related_keys, skills in CATEGORIES:
-        live = sorted(s for s in skills if s in on_disk)
+        live = sorted(s for s in members[key] if s in on_disk)
         I.append(f"### [{title}](maps/{key}.md)  ·  {len(live)} skills")
         I.append("")
         I.append(scope)

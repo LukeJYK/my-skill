@@ -1411,6 +1411,26 @@
       "skillFolderHash": "69e781a19e8807f5d037723f1f994cfbe19573ff",
       "installedAt": "2026-11-25T02:34:27.891Z",
       "updatedAt": "2026-11-25T02:34:27.891Z"
+    },
+    "docker-expert": {
+      "source": "sickn33/agentic-awesome-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sickn33/agentic-awesome-skills.git",
+      "commit": "166f581cfdc37d94cf56efe4454fb06a5759776c",
+      "skillPath": "skills/docker-expert/SKILL.md",
+      "skillFolderHash": "5e224cc06152c7e3257bfe158c7a79f1ec646680",
+      "installedAt": "2026-11-25T03:42:46.092Z",
+      "updatedAt": "2026-11-25T03:42:46.092Z"
+    },
+    "kubernetes-specialist": {
+      "source": "Jeffallan/claude-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Jeffallan/claude-skills.git",
+      "commit": "d98d06edb54c25cfb94017c0ef830342a34a43ba",
+      "skillPath": "plugin/skills/kubernetes-specialist/SKILL.md",
+      "skillFolderHash": "c987ec225fa1d4bac6d8ef6315a0a8fa026b33ed",
+      "installedAt": "2026-11-25T03:42:52.521Z",
+      "updatedAt": "2026-11-25T03:42:52.521Z"
     }
   },
   "dismissed": {

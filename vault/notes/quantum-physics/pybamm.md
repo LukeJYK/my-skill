@@ -20,7 +20,7 @@ created: 2026-11-22
 
 ## Related skills
 
-_None auto-detected. Add your own links here, e.g. `[other-skill](../<domain>/other-skill.md)`._
+- [energy-storage-battery-scientist](../scientific-expert-profiles/energy-storage-battery-scientist.md) — Expert-thinking profile for Energy Storage / Battery Scientist (electrochemistry / cell build & testing / materials characterization / failure analysis / standards (IEC 62660, UN 38.3...
 
 %% ---8<--- personal notes below are preserved on re-run ---8<--- %%
 
